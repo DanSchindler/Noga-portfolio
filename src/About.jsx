@@ -1,5 +1,5 @@
 import React from "react";
-import nogaHeadShot from './assets/nogaHeadShot.png';  // Ensure the path is correct
+import nogaHeadShot from '/assets/nogaHeadShot.png';  // Ensure the path is correct
 // import { ReactComponent as InstaGramIcon} from './assets/icons/instagramLogo.svg';
 
 const About = () => {
