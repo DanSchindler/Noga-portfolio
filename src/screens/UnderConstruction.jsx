@@ -8,10 +8,12 @@ const UnderConstruction = () => {
     justifyContent: 'center',
     height: '100vh',
     backgroundColor: '#f5f5f5',
+    padding: '0 20px',
+    textAlign: 'center',
   };
 
   const headingStyle = {
-    fontSize: '3rem',
+    fontSize: '2.5rem',
     fontWeight: 'bold',
     color: '#333',
     marginBottom: '1rem',
@@ -24,7 +26,7 @@ const UnderConstruction = () => {
   };
 
   const iconStyle = {
-    fontSize: '6rem',
+    fontSize: '4rem',
     color: '#ffc107',
     marginBottom: '2rem',
   };
@@ -34,7 +36,7 @@ const UnderConstruction = () => {
       <i className="fas fa-tools" style={iconStyle}></i>
       <h1 style={headingStyle}>🚧 Site Under Construction 🚧</h1>
       <p style={paragraphStyle}>
-      Thank you for visiting! Come back later to see my work! ✨
+        Thank you for visiting! Come back later to see my work! ✨ Stay tuned! ✨
       </p>
     </div>
   );
