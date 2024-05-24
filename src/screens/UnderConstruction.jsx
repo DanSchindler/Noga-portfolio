@@ -36,7 +36,7 @@ const UnderConstruction = () => {
   return (
     <div style={containerStyle}>
       <i className="fas fa-tools" style={iconStyle}></i>
-      <h1 style={headingStyle}>🚧 Site Under Construction 🚧</h1>
+      <h1 style={headingStyle}>🚧 Page Under Construction 🚧</h1>
       <p style={paragraphStyle}>
         Thank you for visiting! Come back later to see my work! ✨ Stay tuned! ✨
       </p>
