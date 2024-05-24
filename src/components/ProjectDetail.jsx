@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { useParams } from 'react-router-dom';
 import { projectsData } from '../constans';
 import { DotLoader } from 'react-spinners';
+import UnderConstruction from '../screens/UnderConstruction';
 
 const layouts = {
   StackedImageLayout: lazy(() => import('./Layouts/StackedImageLayout')),
@@ -21,7 +22,7 @@ const ProjectDetail = () => {
     <div>
       <p style={style.title}>{project.description}</p>
       <Suspense fallback={<div style={style.spinner}>Loading...</div>}>
-        {LayoutComponent ? <LayoutComponent project={project} /> : <div style={style.spinner}>Could not load images :( <br/> Download offline version</div>}
+        {LayoutComponent ? <LayoutComponent project={project} /> : <UnderConstruction/>}
       </Suspense>
     </div>
   );

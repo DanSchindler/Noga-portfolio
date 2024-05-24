@@ -3,12 +3,14 @@ import React from 'react';
 const UnderConstruction = () => {
   const containerStyle = {
     display: 'flex',
+    width: '85%',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
     backgroundColor: '#f5f5f5',
     padding: '0 20px',
+    margin: 'auto',
     textAlign: 'center',
   };
 
