@@ -4,61 +4,97 @@ const navBarOptions =  {
 
 }
 const projectsData = [
+    {   
+        id: 1,
+        title: "Cé Bon",
+        description: "Cé Bon   |   Soap Bar Package design. ",
+        imageUrl: "/assets/projects/soaps.png", 
+        imageAlt: "soap",
+        layout: 'StackedImageLayout',
+        images: [
+            { url: '/assets/projects/cebon/mockup-pear.png', alt: 'pear-soap' },
+            { url: '/assets/projects/cebon/mockup-lemon.png', alt: 'lemon-soap' },
+            { url: '/assets/projects/cebon/mockup-fig.png', alt: 'fig-soap' },
+            { url: '/assets/projects/cebon/mockup-mix.png', alt: 'mix-soap' },
+            { url: '/assets/projects/cebon/swimmers.png', alt: 'swimmers' },
+        ]
+    
+    },
     {
+    id: 2,
     title: "Zot Ani \n (This is Me)",
-    description: "",
+    description: "Zot Ani   |   “Zot Ani” means this is me. short video introducing me. Cut out Video.",
     imageUrl: "/assets/projects/zotAni.png", 
     imageAlt: "",
+    layout: 'StackedImageLayout',
+    coverMedia: { url: '/assets/projects/zotani/zot-ani.mp4', alt: 'zot-ani-vid', orientation: 'horizontal' },
+    images: [
+        { url: '/assets/projects/zotani/zotAniGrid.png', alt: 'zot-ani-grid',  },
+    ]
     },
     {
-    title: "Album Cover \n Zohar Argov",
-    description: "",
-    imageUrl: "/assets/projects/zoharArgov.png", 
-    imageAlt: "",
+        id: 3, 
+        title: "Album Cover \n Zohar Argov",
+        description: "ZOHAR   |   Album Cover for the famous Israeli singer Zohar Argov. Zohar Argov, who was very famous in the 80’s, is widely known in Israel as \"The king of Mizrahi (Middle Eastern) music\". Print.",
+        imageUrl: "/assets/projects/zoharArgov.png", 
+        imageAlt: "zoharArgov",
+        layout: 'StackedImageLayout',
+        images: [
+            { url: '/assets/projects/zohar/frontCoverZohar.png', alt: 'front-cover-zohar' },
+            { url: '/assets/projects/zohar/backCoverZohar.png', alt: 'back-cover-zohar' },
+            { url: '/assets/projects/zohar/openCoverZohar.png', alt: 'open-cover-zohar' },
+            { url: '/assets/projects/zohar/zoharArgov.gif', alt: 'zohar-show-gif' },
+        ]
     },
     {
-    title: "Constructivisim \n Tools",
-    description: "",
-    imageUrl: "/assets/projects/constructivisim.png", 
-    imageAlt: "",
+        id: 4, 
+        title: "ELIFELET \n Logo",
+        description: "ELIFELET   |   Logo design inspired by street art. ",
+        imageUrl: "/assets/projects/elifelet.png", 
+        imageAlt: "elifelet",
     },
     {
-    title: "Frogi - Kusama",
-    description: "",
-    imageUrl: "/assets/projects/frogiKusama.png", 
-    imageAlt: "",
+        id: 5, 
+        title: "Sky Bubbles",
+        description: "Sky Buubles   |   luxury hotel located on top of the highest mountains in the world. Website.",
+        imageUrl: "/assets/projects/skyBubbles.png", 
+        imageAlt: "skyBubbles",
     },
     {
-    title: "Cé Bon",
-    description: "",
-    imageUrl: "/assets/projects/soaps.png", 
-    imageAlt: "",
+        id: 6, 
+        title: "Constructivisim \n Tools",
+        description: "Constructivism Tools   |   Tools design inspired by Constructivism. Vector.",
+        imageUrl: "/assets/projects/constructivisim.png", 
+        imageAlt: "constructivisim",
+        layout: 'StackedImageLayout',
+        images: [
+            { url: '/assets/projects/constructivisim/constructivisimPoster.png', alt: 'constructivisimPoster' },
+            { url: '/assets/projects/constructivisim/constructivisimGrid.png', alt: 'constructivisimGrid' },
+        ]
     },
     {
-        title: "Sim",
-        description: "",
-        imageUrl: "/assets/projects/sim.png", 
-        imageAlt: "",
+        id: 7, 
+        title: "A - Z Animation",
+        description: "A-Z   |   An animation of a metamorphosis of the letter A into the letter Z. Classic animation.",
+        imageUrl: "/assets/projects/a-z.png", 
+        imageAlt: "a-z",
+        layout: 'StackedImageLayout',
+        images: [
+            { url: '/assets/projects/a-z.mp4', alt: 'a-z',  orientation: 'vertical'},
+        ]
     },
     {
-    title: "Sky Bubbles",
-    description: "",
-    imageUrl: "/assets/projects/skyBubbles.png", 
-    imageAlt: "",
+        id: 8, 
+        title: "Frogi - Kusama",
+        description: "Frogi Kusama   |   An illustration of a cross between the artist Yayoi Kusama and a frog. Ink on paper.",
+        imageUrl: "/assets/projects/frogiKusama.png", 
+        imageAlt: "frogiKusama",
+        layout: 'StackedImageLayout',
+        images: [
+            { url: '/assets/projects/frogiKusama.png', alt: 'frogiKusama' },
+        ]
     },
-    {
-    title: "A - Z Animation",
-    description: "",
-    imageUrl: "/assets/projects/a-z.png", 
-    imageAlt: "",
-    },
-    {
-    title: "",
-    description: "",
-    imageUrl: "/assets/projects/brief4.png", 
-    imageAlt: "",
-    },
-    
+
 ]
 export { 
     navBarOptions,

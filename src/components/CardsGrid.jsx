@@ -7,6 +7,7 @@ const CardsGrid = ({ projectsData }) => {
             {projectsData.map((project, index) => (
                 <ProjectCard
                     key={index}
+                    id={project.id}
                     title={project.title}
                     description={project.description}
                     imageUrl={project.imageUrl}

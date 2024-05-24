@@ -1,80 +1,160 @@
 import React from "react";
+import styled from 'styled-components';
 import nogaHeadShot from '/assets/nogaHeadShot.png';  // Ensure the path is correct
-// import { ReactComponent as InstaGramIcon} from './assets/icons/instagramLogo.svg';
+
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;  /* Ensure both blocks are the same height */
+  text-align: start;
+  gap: 50px;  /* Adjusted gap */
+  width: 85%;
+  margin: auto;
+  margin-bottom: 80px;
+  flex-wrap: nowrap;  /* No wrapping */
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;  /* Enable wrapping for medium screens */
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+`;
+
+const Text = styled.div`  
+  flex: 2;  /* Take up more space */
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertically center the text */
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: start;
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
+`;
+
+const ImageContainer = styled.div`
+  flex: 1;  /* Adjusted flex to ensure proper scaling */
+  max-width: 400px;  /* Set a maximum width */
+  flex-shrink: 0;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 20px;
+  }
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+  @media (max-width: 768px) {
+    width: 80%; /* Adjust as needed */
+  }
+`;
+
+const HeadLine = styled.h1`
+  margin: 0 0 0.5em 0;
+
+  @media (max-width: 1024px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
+`;
+
+const Paragraph = styled.p`
+  margin: 0 0 1em 0;
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+`;
+
+const Skills = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 8px;
+  }
+`;
 
 const About = () => {
   return (
-    <div style={styles.container}>
-      <div style={styles.text}>
-        <h1 style={styles.headLine}>Hi</h1>
-        <p>
+    <Container>
+      <Text>
+        <HeadLine>Hi</HeadLine>
+        <Paragraph>
           I'm Noga, I'm 25 y/o based in Tel Aviv.
-          <br/>A Visual Communication Student at Shenkar College of
-          Engineering, Design<br/>  and Art.<br/> <br/> 
-        </p>
-        <p>
-          I truly believe in the importance of design and its ability to make a <br/>
-          difference. Every project is a chance for me to improve and express myself.<br/>
-          I'm excited to show how design can have a real impact, and I
-          hope to <br/>
+          <br />A Visual Communication Student at Shenkar College of
+          Engineering, Design and Art.<br /><br />
+        </Paragraph>
+        <Paragraph>
+          I truly believe in the importance of design and its ability to make a <br />
+          difference. Every project is a chance for me to improve and express myself.<br />
+          I'm excited to show how design can have a real impact, and I hope to <br />
           inspire others along the way.
-        </p>
-        <br/> 
-        <br/> 
-
-        <p>{'>'} Illustrator, Photoshop, After Affects, Indesign, Premier, Light room, Figma.</p>
-        <span style={styles.socialIcons}>
-          {/* <InstaGramIcon/> */}
-        </span>
-      </div>
-      <div style={styles.imageContainer}>
-        <img src={nogaHeadShot} alt="noga-headshot-image" style={styles.image} />
-      </div>
-    </div>
+        </Paragraph>
+        <br />
+        <Skills>{'>'} Illustrator, Photoshop, After Affects, Indesign, Premier, Light room, Figma.</Skills>
+      </Text>
+      <ImageContainer>
+        <Image src={nogaHeadShot} alt="noga-headshot-image" />
+      </ImageContainer>
+    </Container>
   );
-};
-
-const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-    textAlign: "start",
-    width: '85%',
-    margin: "auto",
-    marginTop: '78px',
-
-  },
-  text: {
-    width: '60%',
-    height: '100%',
-    color: '#000',
-    fontFamily: 'Poppins',
-    fontSize: '20px',
-    fontStyle: 'normal',
-    flex: '1',
-    fontWeight: '300',
-    lineHeight: 'normal',
-    margin: '0',
-  },
-  imageContainer: {
-    width: '40%',
-    height: '50%',
-    flexShrink: '0',
-  },
-  headLine: {
-    margin: '0',
-  },
-  image: {
-    width: '100%',
-    height: 'auto',
-  },
-  skills:{
-
-  },
-  socialIcons:{
-
-  },
 };
 
 export default About;

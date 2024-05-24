@@ -15,8 +15,7 @@ const styles = {
   gallery: {
     width: '85%',
     margin: "auto",
-    marginTop: '78px',
-    
+    marginBottom: '80px',
 
   },
 }

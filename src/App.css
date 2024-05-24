@@ -12,20 +12,7 @@ body {
   font-weight: 300;
   text-align: center;
   margin-top: 70px;
-}
-
-nav {
-  background: #fdfdfd;
-  border-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  background-color: transparent; /* Fixed typo */
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
 }
 
 .navbar-list {
@@ -35,8 +22,29 @@ nav {
   margin: auto;
   font-size: 20px;
   font-weight: 300;
+  background: #fdfdfd;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: transparent; /* Fixed typo */
+  margin: auto;
+  padding: 0;
 }
 
+
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 300;
+}
 .about,
 .portfolio {
   text-decoration: none;
@@ -65,7 +73,16 @@ nav {
   background: var(--accent);
 }
 
-.nav-list-container {
+.nav-list-container  {
   position: relative;
   margin-top: 63px;
+}
+
+.footer-list-container  {
+  position: relative;
+  margin-top: 63px;
+}
+
+.navbar-container {
+  margin-bottom: 80px;
 }

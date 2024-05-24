@@ -4,14 +4,22 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import '../App.css'
+import { useNavigate } from 'react-router-dom';
 
-function ProjectCard({ title, description, imageUrl, imageAlt }) {
+function ProjectCard({ id,title, imageUrl, imageAlt }) {
   const [hover, setHover] = useState(false);
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/project/${id}`);
+  };
 
   return (
     <Card sx={style.card}
           onMouseOver={() => setHover(true)}
-          onMouseOut={() => setHover(false)}>
+          onMouseOut={() => setHover(false)}
+          onClick={handleCardClick}
+          >
         <CardMedia
           component="img"
           image={imageUrl}   
@@ -43,6 +51,7 @@ const style = {
   },
   cardImg: {
     height: '100%',
+    width: '101%',
     transition: 'opacity 0.5s',
   },
   cardGrayCover: {

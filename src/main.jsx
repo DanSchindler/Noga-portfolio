@@ -7,7 +7,7 @@ import UnderConstruction from './screens/UnderConstruction.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UnderConstruction/>
-    {/* <App /> */}
+    {/* <UnderConstruction/> */}
+    <App />
   </React.StrictMode>,
 )
