@@ -54,7 +54,7 @@ const styles = {
         fontWeight: 300,
         display: 'block',
         paddingBottom: '0',
-        margin: '0'
+        margin: '5px'
     },
     elementPhone: {
         textDecoration: 'none',
