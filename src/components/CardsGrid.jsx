@@ -1,35 +1,23 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import Grid from '@mui/material/Grid';
 
 const CardsGrid = ({ projectsData }) => {
     return (
-        <div style={styles.cardGridStyle}>
+        <Grid container spacing={1} justifyContent="center" style={{ marginTop: '82px' }}>
             {projectsData.map((project, index) => (
-                <ProjectCard
-                    key={index}
-                    id={project.id}
-                    title={project.title}
-                    description={project.description}
-                    imageUrl={project.imageUrl}
-                    imageAlt={project.imageAlt}
-                    style={styles.cardStyle}
-                />
+                <Grid item xs={12} sm={6} key={index}>
+                    <ProjectCard
+                        id={project.id}
+                        title={project.title}
+                        description={project.description}
+                        imageUrl={project.imageUrl}
+                        imageAlt={project.imageAlt}
+                    />
+                </Grid>
             ))}
-        </div>
-    )
-}
-
-const styles = {
-    cardGridStyle: {
-        display: 'grid',
-        gridTemplateColumns: 'auto auto  ' ,
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        margin: 'auto',
-        marginTop: '82px',
-        gap: '10px',
-    },
-
-}
+        </Grid>
+    );
+};
 
 export default CardsGrid;

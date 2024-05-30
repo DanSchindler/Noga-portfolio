@@ -4,6 +4,18 @@ const navBarOptions =  {
 
 }
 const projectsData = [
+    {
+        id: 2,
+        title: "Zot Ani \n (This is Me)",
+        description: "Zot Ani   |   “Zot Ani” means this is me. short video introducing me. Cut out Video.",
+        imageUrl: "/assets/projects/zotAni.png", 
+        imageAlt: "",
+        layout: 'StackedImageLayout',
+        coverMedia: { url: '/assets/projects/zotani/zot-ani.mp4', alt: 'zot-ani-vid', orientation: 'horizontal' },
+        images: [
+            { url: '/assets/projects/zotani/zotAniGrid.png', alt: 'zot-ani-grid',  },
+        ]
+        },
     {   
         id: 1,
         title: "Cé Bon",
@@ -19,18 +31,6 @@ const projectsData = [
             { url: '/assets/projects/cebon/swimmers.png', alt: 'swimmers' },
         ]
     
-    },
-    {
-    id: 2,
-    title: "Zot Ani \n (This is Me)",
-    description: "Zot Ani   |   “Zot Ani” means this is me. short video introducing me. Cut out Video.",
-    imageUrl: "/assets/projects/zotAni.png", 
-    imageAlt: "",
-    layout: 'StackedImageLayout',
-    coverMedia: { url: '/assets/projects/zotani/zot-ani.mp4', alt: 'zot-ani-vid', orientation: 'horizontal' },
-    images: [
-        { url: '/assets/projects/zotani/zotAniGrid.png', alt: 'zot-ani-grid',  },
-    ]
     },
     {
         id: 3, 
@@ -52,6 +52,18 @@ const projectsData = [
         description: "ELIFELET   |   Logo design inspired by street art. ",
         imageUrl: "/assets/projects/elifelet.png", 
         imageAlt: "elifelet",
+        layout: 'StackedImageLayout',
+        images: [
+            { url: '/assets/projects/elifelet/mainLogo.png', alt: 'main-logo-elifelet' },
+            { url: '/assets/projects/elifelet/stickers.png', alt: 'stickers-elifelet' },
+            { url: '/assets/projects/elifelet/coasters.png', alt: 'coasters-elifelet' },
+            { url: '/assets/projects/elifelet/graffity.png', alt: 'graffity-elifelet' },
+            { url: '/assets/projects/elifelet/processIdeas.png', alt: 'processIdeas-elifelet' },
+            { url: '/assets/projects/elifelet/processSymbol.png', alt: 'processSymbol-elifelet' },
+            { url: '/assets/projects/elifelet/letters.png', alt: 'letters-elifelet' },
+            { url: '/assets/projects/elifelet/mainLogo.png', alt: 'mainLogo-elifelet' },
+            
+        ]
     },
     {
         id: 5, 
@@ -59,6 +71,10 @@ const projectsData = [
         description: "Sky Buubles   |   luxury hotel located on top of the highest mountains in the world. Website.",
         imageUrl: "/assets/projects/skyBubbles.png", 
         imageAlt: "skyBubbles",
+        layout: 'StackedImageLayout',
+        images: [
+            { url: '/assets/projects/skyBubbleDemo.mp4', alt: 'skybuuble-demo',  orientation: 'horizontal'},
+        ]
     },
     {
         id: 6, 

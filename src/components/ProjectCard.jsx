@@ -51,7 +51,7 @@ const style = {
   },
   cardImg: {
     height: '100%',
-    width: '101%',
+    width: '104%',
     transition: 'opacity 0.5s',
   },
   cardGrayCover: {

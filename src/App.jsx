@@ -24,7 +24,7 @@ export function App() {
 }
 const style={
   appContainer:{
-    maxWidth: '2100px', // Limit the maximum width for large screens
+    //maxWidth: '2100px', // Limit the maximum width for large screens
     margin: 'auto'
 
   }
