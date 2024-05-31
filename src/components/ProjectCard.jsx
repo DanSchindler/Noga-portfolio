@@ -48,7 +48,8 @@ const style = {
     position: 'relative',
     overflow: 'hidden',
     whiteSpace: 'pre-wrap',
-    backgroundColor: 'red',
+    borderRadius: '0px', 
+
   },
   cardImg: {
     height: '100%',

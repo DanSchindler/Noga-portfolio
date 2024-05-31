@@ -1,64 +1,81 @@
-import React, { Suspense, lazy } from 'react';
-import { useParams } from 'react-router-dom';
-import { projectsData } from '../constans';
-import { DotLoader } from 'react-spinners';
-import UnderConstruction from '../screens/UnderConstruction';
+import React, { Suspense, lazy } from "react";
+import { useParams } from "react-router-dom";
+import { projectsData } from "../constans";
+import UnderConstruction from "../screens/UnderConstruction";
+import { Box, Typography } from "@mui/material";
 
 const layouts = {
-  StackedImageLayout: lazy(() => import('./Layouts/StackedImageLayout')),
+  StackedImageLayout: lazy(() => import("./Layouts/StackedImageLayout")),
+  TwoSideGallery: lazy(() => import("./Layouts/TwoSideGallery")),
 };
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const project = projectsData.find(p => p.id === parseInt(id));
+  const project = projectsData.find((p) => p.id === parseInt(id));
 
   if (!project) {
-    return <div style={style.notFound}>Project not found</div>;
+    return <Typography sx={styles.notFound}>Project not found</Typography>;
   }
 
   const LayoutComponent = layouts[project.layout];
 
   return (
-    <div>
-      <p style={style.title}>{project.description}</p>
-      <Suspense fallback={<div style={style.spinner}>Loading...</div>}>
-        {LayoutComponent ? <LayoutComponent project={project} /> : <UnderConstruction/>}
+    <Box>
+      <Typography sx={styles.title}>{project.description}</Typography>
+      <Suspense fallback={<Box sx={styles.spinner}>Loading...</Box>}>
+        {LayoutComponent ? (
+          <LayoutComponent
+            project={project}
+            gap={project.gap ? project.gap : "10px"}
+            postHeaderGap={project.postHeaderGap ? project.postHeaderGap : "10px"}
+          />
+        ) : (
+          <UnderConstruction />
+        )}
       </Suspense>
-    </div>
+    </Box>
   );
 };
 
-const style = {
+const styles = {
   title: {
-    color: '#000',
-    fontFamily: 'Poppins',
-    fontSize: '22px',
-    fontStyle: 'normal',
-    fontWeight: '300',
-    lineHeight: '149.805%',
-    width: '85%',
-    margin: 'auto',
-    marginBottom: '50px',
-    whiteSpace: 'pre-wrap'
+    color: "#000",
+    fontFamily: "Poppins",
+    fontSize: "22px",
+    fontStyle: "normal",
+    fontWeight: "300",
+    lineHeight: "149.805%",
+    width: "85%",
+    margin: "auto",
+    marginBottom: "50px",
+    whiteSpace: "pre-wrap",
+    '@media (max-width: 600px)': {
+      fontSize: "12px",
+      marginBottom: "30px",
+    },
   },
   notFound: {
-    color: '#000',
-    fontFamily: 'Poppins',
-    fontSize: '22px',
-    fontStyle: 'normal',
-    fontWeight: '300',
-    lineHeight: '149.805%',
-    width: '85%',
-    margin: 'auto',
-    marginBottom: '50px',
-    whiteSpace: 'pre-wrap',
-    textAlign: 'center'
+    color: "#000",
+    fontFamily: "Poppins",
+    fontSize: "22px",
+    fontStyle: "normal",
+    fontWeight: "300",
+    lineHeight: "149.805%",
+    width: "85%",
+    margin: "auto",
+    marginBottom: "50px",
+    whiteSpace: "pre-wrap",
+    textAlign: "center",
+    '@media (max-width: 600px)': {
+      fontSize: "18px",
+      marginBottom: "30px",
+    },
   },
   spinner: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
 };
 
 export default ProjectDetail;

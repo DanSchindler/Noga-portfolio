@@ -1,36 +1,43 @@
 import React from "react";
+import { Box } from "@mui/material";
 
 const MediaRenderer = ({ media }) => {
   const isVideo = media.url.endsWith(".mp4");
   const isGif = media.url.endsWith(".gif");
 
+  const getStyle = () => {
+    if (isGif) return styles.gif;
+    switch (media.orientation) {
+      case "vertical":
+        return styles.verticalVideo;
+      case "smaller":
+        return styles.smaller;
+      case "vertical smaller":
+        return styles.verticalSmaller;
+      default:
+        return styles.horizontalVideo;
+    }
+  };
+
   return isVideo ? (
-    <video
+    <Box
+      component="video"
       controls
       autoPlay
-      style={
-        media.orientation === "vertical"
-          ? styles.verticalVideo
-          : styles.horizontalVideo
-      }
-    >
-      <source src={media.url} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+      src={media.url}
+      sx={getStyle()}
+    />
   ) : (
-    <img
+    <Box
+      component="img"
       src={media.url}
       alt={media.alt}
-      style={isGif ? styles.gif : styles.image}
+      sx={getStyle()}
     />
   );
 };
 
 const styles = {
-  image: {
-    width: "85%",
-    height: "auto",
-  },
   gif: {
     maxWidth: "100%",
     maxHeight: "1200px",
@@ -40,13 +47,35 @@ const styles = {
     alignSelf: "center",
   },
   horizontalVideo: {
-    width: "85%",
+    width: "100%",
     height: "auto",
+    '@media (max-width: 600px)': {
+      width: "100%",
+    },
+  },
+  smaller: {
+    width: "75%",
+    height: "auto",
+    '@media (max-width: 600px)': {
+      width: "90%",
+    },
   },
   verticalVideo: {
     width: "85%",
-    maxWidth: '1000px', 
+    maxWidth: '1000px',
     height: "auto",
+    '@media (max-width: 600px)': {
+      width: "100%",
+    },
+  },
+  verticalSmaller: {
+    width: "75%",
+    maxWidth: '800px',
+    height: "auto",
+    '@media (max-width: 600px)': {
+      width: "75%",
+      maxWidth: '180px',
+    },
   },
 };
 

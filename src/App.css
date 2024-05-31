@@ -93,8 +93,14 @@ body {
 
 .navbar-container {
   margin-bottom: 80px;
+  
 }
+@media (max-width: 600px) {
+  .navbar-container {
+    margin-bottom: 40px;
 
+  }
+}
 @media (max-width: 768px) {
   .navbar-list {
     flex-direction: row;
