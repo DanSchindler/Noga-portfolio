@@ -48,10 +48,11 @@ const style = {
     position: 'relative',
     overflow: 'hidden',
     whiteSpace: 'pre-wrap',
+    backgroundColor: 'red',
   },
   cardImg: {
     height: '100%',
-    width: '104%',
+    width: '102%',
     transition: 'opacity 0.5s',
   },
   cardGrayCover: {

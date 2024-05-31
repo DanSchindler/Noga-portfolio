@@ -11,7 +11,9 @@ const Footer = () => {
         <a href="https://www.instagram.com/nogarosner/" target="_blank" rel="noopener noreferrer" style={styles.iconLink}>
           <img src={instagramLogo} alt="Instagram" style={styles.icon} />
         </a>
-        <p style={styles.element}>nogarosner@gmail.com</p>
+        <a href="mailto:nogarosner@gmail.com" style={styles.element}>
+          nogarosner@gmail.com
+        </a>
       </div>
     </div>
   );
