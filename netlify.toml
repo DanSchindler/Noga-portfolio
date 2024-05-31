@@ -1,6 +1,6 @@
 [build]
-  command = "git lfs pull && npm run build"
-  publish = "build"
+  command = "git lfs pull"
+  publish = "dist"
 
 [build.environment]
   GIT_LFS_SKIP_SMUDGE = "1"
