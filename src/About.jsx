@@ -1,33 +1,36 @@
 import React from "react";
-import styled from 'styled-components';
-import nogaHeadShot from '/assets/nogaHeadShot.png';  // Ensure the path is correct
+import styled from "styled-components";
+import nogaHeadShot from "/assets/nogaHeadShot.png"; // Ensure the path is correct
 
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: stretch;  /* Ensure both blocks are the same height */
+  align-items: stretch; /* Ensure both blocks are the same height */
   text-align: start;
-  gap: 50px;  /* Adjusted gap */
+  gap: 50px; /* Adjusted gap */
   width: 85%;
   margin: auto;
   margin-bottom: 80px;
-  flex-wrap: nowrap;  /* No wrapping */
+  flex-wrap: nowrap; /* No wrapping */
 
   @media (max-width: 1024px) {
-    flex-wrap: wrap;  /* Enable wrapping for medium screens */
+    flex-wrap: wrap; /* Enable wrapping for medium screens */
+    margin-top: 20px;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-top: 20px;
+
   }
 `;
 
-const Text = styled.div`  
-  flex: 2;  /* Take up more space */
+const Text = styled.div`
+  flex: 2; /* Take up more space */
   color: #000;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -35,7 +38,7 @@ const Text = styled.div`
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Vertically center the text */
+  justify-content: center; /* Vertically center the text */
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -54,13 +57,15 @@ const Text = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  flex: 1;  /* Adjusted flex to ensure proper scaling */
-  max-width: 400px;  /* Set a maximum width */
+  flex: 1; /* Adjusted flex to ensure proper scaling */
+  max-width: 400px; /* Set a maximum width */
   flex-shrink: 0;
   height: auto;
+  borderradius: "0px";
   display: flex;
   justify-content: center;
   align-items: center;
+  borderRadius: '0px', 
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -75,7 +80,7 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  borderRadius: '0px', 
 
   @media (max-width: 768px) {
     width: 80%; /* Adjust as needed */
@@ -138,18 +143,28 @@ const About = () => {
         <HeadLine>Hi</HeadLine>
         <Paragraph>
           I'm Noga, I'm 25 y/o based in Tel Aviv.
-          <br />A Visual Communication Student at Shenkar College of
-          Engineering, Design and Art.<br /><br />
+          <br />A Visual Communication student at Shenkar College of
+          Engineering, Design and Art.
+          <br />
+          <br />
         </Paragraph>
         <Paragraph>
-          I truly believe in the importance of design and its ability to make a <br />
-          difference. Every project is a chance for me to improve and express myself.<br />
-          I'm excited to show how design can have a real impact, and I hope to <br />
+          I truly believe in the importance of design and its ability to make a{" "}
+          <br />
+          difference. Every project is a chance for me to improve and express
+          myself.
+          <br />
+          I'm excited to show how design can have a real impact, and I hope to{" "}
+          <br />
           inspire others along the way.
         </Paragraph>
         <br />
-        <Skills>{'>'} Illustrator, Photoshop, After Affects, Indesign, Premier, Light room, Figma.</Skills>
+        <Skills>
+          {">"} Illustrator, Photoshop, After Effects, InDesign, Premiere,
+          Lightroom, Figma.
+        </Skills>
       </Text>
+
       <ImageContainer>
         <Image src={nogaHeadShot} alt="noga-headshot-image" />
       </ImageContainer>

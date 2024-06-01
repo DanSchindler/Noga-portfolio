@@ -21,7 +21,7 @@ const ProjectDetail = () => {
 
   return (
     <Box>
-      <Typography sx={styles.title}>{project.description}</Typography>
+      {project.description && <Typography sx={styles.title}>{project.description}</Typography>}
       <Suspense fallback={<Box sx={styles.spinner}>Loading...</Box>}>
         {LayoutComponent ? (
           <LayoutComponent
@@ -51,7 +51,8 @@ const styles = {
     whiteSpace: "pre-wrap",
     '@media (max-width: 600px)': {
       fontSize: "12px",
-      marginBottom: "30px",
+      marginBottom: "20px",
+      marginTop: "30px"
     },
   },
   notFound: {

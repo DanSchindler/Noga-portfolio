@@ -155,12 +155,10 @@ const projectsData = [
   },
   {
     id: 8,
-    title: "Frogi - Kusama",
-    description:
-      "Frogi Kusama   |   An illustration of a cross between the artist Yayoi Kusama and a frog. Ink on paper.",
+    title: "Mix of Illustrations",
     imageUrl: "/assets/projects/frogiKusama.png",
     imageAlt: "frogiKusama",
-    layout: "StackedImageLayout",
+    layout: "TwoSideGallery",
     images: [{ url: "/assets/projects/frogiKusama.png", alt: "frogiKusama" }],
   },
 ];
