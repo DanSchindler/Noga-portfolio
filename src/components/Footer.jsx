@@ -1,81 +1,88 @@
 import React from "react";
-import '../App.css';
-import facebookLogo from '/public/assets/icons/facebookLogo.svg';
-import instagramLogo from '/public/assets/icons/instagramLogo.svg';
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import instagramLogo from "/public/assets/icons/instagramLogo.svg";
 
 const Footer = () => {
-  
-  return (
-    <div className="footer-container" style={styles.footerContainer}>
-      <div style={styles.footerList}>
-        <a href="https://www.instagram.com/nogarosner/" target="_blank" rel="noopener noreferrer" style={styles.iconLink}>
-          <img src={instagramLogo} alt="Instagram" style={styles.icon} />
-        </a>
-        <a href="mailto:nogarosner@gmail.com" style={styles.element}>
-          nogarosner@gmail.com
-        </a>
-      </div>
-    </div>
-  );
-};
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-const styles = {
-    footerContainer: {
-        width: '85%',
-        padding: '20px 0',
-        backgroundColor: '#fdfdfd',
-        borderTop: '1px solid #000',
-        borderBottom: '1px solid #000',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: 'auto',
-        padding: 0,
-        backgroundColor: 'transparent', 
-        marginBottom: '80px',
-        marginTop: '50px',
-    },
-    footerList: {
-        display: 'flex',
-        justifyContent: 'center',
-        width: '85%',
-        margin: 'auto',
-        gap: '20px',
-        fontSize: '20px',
-        fontWeight: 300,
-        background: '#fdfdfd',
-        borderRadius: '10px 10px 0 0',
-        backgroundColor: 'transparent', 
-        padding: '0',
-        flexWrap: 'wrap',
-    },
-    element: {
-        textDecoration: 'none',
-        color: '#000',
-        fontSize: '16px',
-        fontWeight: 300,
-        display: 'block',
-        paddingBottom: '0',
-        margin: '5px'
-    },
-    elementPhone: {
-        textDecoration: 'none',
-        color: '#000',
-        fontSize: '12px',
-        fontWeight: 300,
-        alignSelf: 'center',
-        display: 'block',
-        paddingBottom: '0',
-        margin: '0'
-    },
-    icon: {
-        width: '24px',
-        height: '24px',
-    },
-    iconLink: {
-        display: 'flex',
-        alignItems: 'center',
-    }
+  return (
+    <Box
+      sx={{
+        width: "100%",
+        padding: "5px 0",
+        backgroundColor: "#fdfdfd",
+        borderTop: "1px solid #000",
+        borderBottom: "1px solid #000",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "auto",
+        backgroundColor: "transparent",
+        marginBottom: "80px",
+        marginTop: "80px",
+        [theme.breakpoints.down("sm")]: {
+          marginTop: "40px",
+          marginBottom: "40px",
+          padding: "2px 0",
+
+        },
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          margin: "auto",
+          gap: "20px",
+          fontSize: "20px",
+          fontWeight: 300,
+          background: "#fdfdfd",
+          borderRadius: "10px 10px 0 0",
+          backgroundColor: "transparent",
+          padding: "0",
+          flexWrap: "wrap",
+          [theme.breakpoints.down("sm")]: {
+            gap: '10px'
+          },
+        }}
+      >
+        <Link
+          href="https://www.instagram.com/nogarosner/"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ display: "flex", alignItems: "center" }}
+        >
+          <Box
+            component="img"
+            src={instagramLogo}
+            alt="Instagram"
+            sx={{
+              width: isMobile ? 20 : 24,
+              height: isMobile ? 20 : 24,
+            }}
+          />
+        </Link>
+        <Link
+          href="mailto:nogarosner@gmail.com"
+          sx={{
+            textDecoration: "none",
+            color: "#000",
+            fontSize: isMobile ? "12px" : "16px",
+            fontWeight: 300,
+            display: "block",
+            margin: "5px",
+          }}
+        >
+          nogarosner@gmail.com
+        </Link>
+      </Box>
+    </Box>
+  );
 };
 
 export default Footer;

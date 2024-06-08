@@ -9,11 +9,11 @@ const StackedImageLayout = ({ project, gap = 20, postHeaderGap = 80 }) => {
   const headerIndex = project.headerIndex !== undefined ? project.headerIndex : -1;
 
   return (
-    <Box sx={{ width: '85%', margin: 'auto', gap: gap, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <Box sx={{ width: '100%', margin: 'auto', gap: gap, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {project.coverMedia && (
         <>
           <MediaRenderer media={project.coverMedia} isCover />
-          <Box sx={{ marginTop: '213px', '@media (max-width: 600px)': { marginTop: '100px' } }}></Box>
+          <Box sx={{ marginTop: '180px', '@media (max-width: 600px)': { marginTop: '15px' } }}></Box>
         </>
       )}
       {images && images.map((media, index) => (

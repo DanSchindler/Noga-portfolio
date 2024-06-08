@@ -19,7 +19,7 @@ body {
 .navbar-list {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  
   margin: auto;
   font-size: 20px;
   font-weight: 300;
@@ -39,7 +39,7 @@ body {
 .footer-list {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+
   margin: auto;
   font-size: 20px;
   font-weight: 300;
@@ -134,6 +134,19 @@ body {
 
   .logo{
     margin-top: 60px;
+  }
+
+  .logo-svg {
+    width: 316;
+    height: 75;
+  }
+  
+  /* Media query for smaller screens (e.g., max-width: 600px) */
+  @media (max-width: 800px) {
+    .logo-svg {
+      width: 200px; /* Adjust the width for mobile screens */
+      height: auto; /* Maintain aspect ratio */
+    }
   }
 
   .underline-portfolio {

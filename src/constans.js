@@ -24,7 +24,7 @@ const projectsData = [
     id: 1,
     title: "Cé Bon",
     description: "Cé Bon   |   Soap Bar Package design. ",
-    imageUrl: "/assets/projects/cebon/mockup-mix.png",
+    imageUrl: "/assets/projects/cebon/mockup-mix-cover.png",
     imageAlt: "soap",
     layout: "StackedImageLayout",
     images: [

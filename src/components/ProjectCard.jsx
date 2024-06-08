@@ -48,7 +48,8 @@ const style = {
     position: 'relative',
     overflow: 'hidden',
     whiteSpace: 'pre-wrap',
-    borderRadius: '0px', 
+    borderRadius: '0px', // 
+    width: '100%',  
 
   },
   cardImg: {

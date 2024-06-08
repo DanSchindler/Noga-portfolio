@@ -8,7 +8,7 @@ const Container = styled.div`
   align-items: stretch; /* Ensure both blocks are the same height */
   text-align: start;
   gap: 50px; /* Adjusted gap */
-  width: 85%;
+  width: 100%;
   margin: auto;
   margin-bottom: 80px;
   flex-wrap: nowrap; /* No wrapping */
@@ -105,9 +105,12 @@ const HeadLine = styled.h1`
 
 const Paragraph = styled.p`
   margin: 0 0 1em 0;
+  max-width: 70%;
 
   @media (max-width: 1024px) {
     font-size: 18px;
+    max-width: 100%;
+
   }
 
   @media (max-width: 768px) {
@@ -120,21 +123,31 @@ const Paragraph = styled.p`
 `;
 
 const Skills = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
+  position: relative;
+  padding-left: 1em; /* Adjust padding to account for the ">" symbol */
+  text-indent: -1em; /* Negative indent to pull the text back to the start */
+
+  &::before {
+    content: '> '; /* Add the ">" symbol */
+    position: relative;
+    left: 0;
+  }
 
   @media (max-width: 1024px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   @media (max-width: 768px) {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   @media (max-width: 480px) {
-    font-size: 8px;
+    font-size: 12px;
   }
 `;
+
 
 const About = () => {
   return (
@@ -149,18 +162,15 @@ const About = () => {
           <br />
         </Paragraph>
         <Paragraph>
-          I truly believe in the importance of design and its ability to make a{" "}
-          <br />
+          I truly believe in the importance of design and its ability to make a
           difference. Every project is a chance for me to improve and express
           myself.
-          <br />
           I'm excited to show how design can have a real impact, and I hope to{" "}
-          <br />
           inspire others along the way.
         </Paragraph>
         <br />
         <Skills>
-          {">"} Illustrator, Photoshop, After Effects, InDesign, Premiere,
+          Illustrator, Photoshop, After Effects, InDesign, Premiere,
           Lightroom, Figma.
         </Skills>
       </Text>

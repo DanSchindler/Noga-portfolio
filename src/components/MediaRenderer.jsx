@@ -48,7 +48,6 @@ const styles = {
   },
   horizontalVideo: {
     width: "100%",
-    height: "auto",
     '@media (max-width: 600px)': {
       width: "100%",
     },

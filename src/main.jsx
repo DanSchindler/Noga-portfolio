@@ -8,7 +8,7 @@ import { Container } from '@mui/material';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Container maxWidth="false" sx={{maxWidth: '2250px'}} >
+    <Container maxWidth="false"  sx={{maxWidth: '2250px' } } >
     {/* <UnderConstruction/> */}
     <App />
     </Container>

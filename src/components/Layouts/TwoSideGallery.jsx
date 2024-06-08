@@ -3,7 +3,7 @@ import { Grid, Box, Typography } from "@mui/material";
 
 const TwoSideGallery = () => {
   return (
-    <Box sx={{ padding: 2, width: { xs: "85%", md: "85%" }, margin: "auto" }}>
+    <Box sx={{ padding: 0, width: { xs: "100%", md: "100%" }, margin: "auto" , marginTop: '30px'}}>
       {/* First Row */}
       <Grid container spacing={4}>
         <Grid item xs={12} md={5}>
@@ -22,12 +22,20 @@ const TwoSideGallery = () => {
       </Grid>
       <Grid container spacing={2} sx={{ marginTop: { xs: 0, md: -20 } }}>
         <Grid item xs={0} md={1} /> {/* Spacer for gap */}
-        <Grid item xs={12} md={6} sx={{ marginTop: { xs: 0, md: 0 }, marginLeft: { xs: "auto", md: "auto" } }}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{
+            marginTop: { xs: 0, md: 0 },
+            marginLeft: { xs: "auto", md: "auto" },
+          }}
+        >
           <Typography variant="body1" sx={style.headingStyle}>
             "Fishland" | An illustration of an interaction between a fish, a
             pineapple, and swimmers. Acrylic on paper.
           </Typography>
-          <Grid container spacing={1} sx={{  marginTop: { xs: 2, md: 4 }}}>
+          <Grid container spacing={1} sx={{ marginTop: { xs: 2, md: 4 } }}>
             <Grid item xs={6}>
               <Box
                 component="img"
@@ -75,7 +83,8 @@ const TwoSideGallery = () => {
         </Grid>
         <Grid
           item
-          xs={12} md={4}
+          xs={12}
+          md={4}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -90,7 +99,15 @@ const TwoSideGallery = () => {
             sx={{ width: "100%", objectFit: "cover", marginTop: "auto" }}
           />
         </Grid>
-        <Grid item xs={12} md={8} sx={{ marginTop: { xs: 4, md: 12 }, marginLeft: { xs: "auto", md: "auto" } }}>
+        <Grid
+          item
+          xs={12}
+          md={8}
+          sx={{
+            marginTop: { xs: 4, md: 12 },
+            marginLeft: { xs: "auto", md: "auto" },
+          }}
+        >
           <Typography variant="body1" sx={style.headingStyle}>
             Grasshopper Bike | An illustration of a combination of a grasshopper
             and bicycle. Crayon colors on paper.
@@ -99,12 +116,13 @@ const TwoSideGallery = () => {
             component="img"
             src="/assets/projects/mixedProcjets/GrasshopperBike.png"
             alt="Grasshopper Bike"
-            sx={{ width: "100%", marginTop: { xs: 2, md: 4 }}}
+            sx={{ width: "100%", marginTop: { xs: 2, md: 4 } }}
           />
         </Grid>
         <Grid item xs={12} md={5} sx={{ marginTop: { xs: 4, md: 12 } }}>
           <Typography variant="body1" sx={style.headingStyle}>
-            R.I.P | An illustration of an Interpretation of a vintage matchbox. Acrylic on plywood.
+            R.I.P | An illustration of an Interpretation of a vintage matchbox.
+            Acrylic on plywood.
           </Typography>
           <Grid container spacing={0} sx={{ marginTop: 4 }}>
             <Grid item xs={12}>
@@ -119,7 +137,8 @@ const TwoSideGallery = () => {
         </Grid>
         <Grid
           item
-          xs={12} md={3}
+          xs={12}
+          md={3}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -146,7 +165,7 @@ const style = {
     fontSize: { xs: "14px", md: "22px" },
     fontStyle: "normal",
     fontWeight: 300,
-    lineHeight: { xs: "130%", md: "149.805%" },
+    lineHeight: { xs: "100%", md: "100%" },
   },
 };
 

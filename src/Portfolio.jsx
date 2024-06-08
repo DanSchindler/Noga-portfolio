@@ -13,10 +13,7 @@ const Portfolio = () => {
 
 const styles = {
   gallery: {
-    width: '85%',
     margin: "auto",
-    marginBottom: '80px',
-
   },
 }
   export default Portfolio;

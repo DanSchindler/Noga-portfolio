@@ -12,8 +12,8 @@ export function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/about" element={<About />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
       </Routes>
       <Footer/>
@@ -25,8 +25,6 @@ export function App() {
 const style={
   appContainer:{
     //maxWidth: '2100px', // Limit the maximum width for large screens
-    margin: 'auto'
-
   }
 }
 export default App;
