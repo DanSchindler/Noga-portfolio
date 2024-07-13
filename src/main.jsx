@@ -1,16 +1,29 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './App.css';
-import UnderConstruction from './screens/UnderConstruction.jsx';
-import { Container } from '@mui/material';
+import './App.css'
+import UnderConstruction from './screens/UnderConstruction.jsx'
+import { Container, useMediaQuery } from '@mui/material'
 
+const Root = () => {
+  const isMobile = useMediaQuery('(max-width:600px)')
+
+  return (
+    <Container
+      maxWidth="false"
+      sx={{
+        width: isMobile ? '100%' : '85%',
+        maxWidth: isMobile ? '100%' : '2250px',
+      }}
+    >
+      {/* <UnderConstruction/> */}
+      <App />
+    </Container>
+  )
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Container maxWidth="false"  sx={{maxWidth: '2250px' } } >
-    {/* <UnderConstruction/> */}
-    <App />
-    </Container>
+    <Root />
   </React.StrictMode>,
 )
