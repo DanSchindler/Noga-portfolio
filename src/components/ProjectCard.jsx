@@ -48,14 +48,17 @@ const style = {
     position: 'relative',
     overflow: 'hidden',
     whiteSpace: 'pre-wrap',
-    borderRadius: '0px', // 
+    borderRadius: '0px', 
     width: '100%',  
+    boxShadow: 'none', 
+
 
   },
   cardImg: {
     height: '100%',
     width: '102%',
     transition: 'opacity 0.5s',
+    boxShadow: 'none', 
   },
   cardGrayCover: {
     position: 'absolute',

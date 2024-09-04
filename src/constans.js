@@ -128,22 +128,6 @@ const projectsData = [
     ],
   },
   {
-    id: 5,
-    title: "Sky Bubbles",
-    description:
-      "Sky Buubles   |   luxury hotel located on top of the highest mountains in the world. Website.",
-    imageUrl: "/assets/projects/skyBubbles.png",
-    imageAlt: "skyBubbles",
-    layout: "StackedImageLayout",
-    images: [
-      {
-        url: "/assets/projects/skyBubbleDemo.mp4",
-        alt: "skybuuble-demo",
-        orientation: "horizontal",
-      },
-    ],
-  },
-  {
     id: 3,
     title: "Album Cover \n Zohar Argov",
     description:
@@ -168,6 +152,34 @@ const projectsData = [
     ],
   },
   {
+    id: 7,
+    title: "A - Z Animation",
+    description:
+      "A-Z   |   An animation of a metamorphosis of the letter A into the letter Z. Classic animation.",
+    imageUrl: "/assets/projects/a-z.png",
+    imageAlt: "a-z",
+    layout: "StackedImageLayout",
+    images: [
+      { url: "/assets/projects/a-z.mp4", alt: "a-z", orientation: "vertical" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Sky Bubbles",
+    description:
+      "Sky Buubles   |   luxury hotel located on top of the highest mountains in the world. Website.",
+    imageUrl: "/assets/projects/skyBubbles.png",
+    imageAlt: "skyBubbles",
+    layout: "StackedImageLayout",
+    images: [
+      {
+        url: "/assets/projects/skyBubbleDemo.mp4",
+        alt: "skybuuble-demo",
+        orientation: "horizontal",
+      },
+    ],
+  },
+  {
     id: 6,
     title: "Constructivisim \n Tools",
     description:
@@ -184,18 +196,6 @@ const projectsData = [
         url: "/assets/projects/constructivisim/constructivisimGrid.png",
         alt: "constructivisimGrid",
       },
-    ],
-  },
-  {
-    id: 7,
-    title: "A - Z Animation",
-    description:
-      "A-Z   |   An animation of a metamorphosis of the letter A into the letter Z. Classic animation.",
-    imageUrl: "/assets/projects/a-z.png",
-    imageAlt: "a-z",
-    layout: "StackedImageLayout",
-    images: [
-      { url: "/assets/projects/a-z.mp4", alt: "a-z", orientation: "vertical" },
     ],
   },
   {
