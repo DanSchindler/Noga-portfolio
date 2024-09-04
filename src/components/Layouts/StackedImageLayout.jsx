@@ -23,7 +23,7 @@ const StackedImageLayout = ({ project, gap = 20, postHeaderGap = 80 }) => {
               Process
             </Typography>
           )}
-          <Grid item sx={{ marginTop: headerIndex != -1 && index > headerIndex + 1? postHeaderGap : gap, width: '100%', display: 'flex', justifyContent: 'center', '@media (max-width: 600px)': { marginTop: headerIndex != -1 && index > headerIndex + 1 ? 3 : 0} }}>
+          <Grid item sx={{ marginTop: headerIndex != -1 && index > headerIndex + 1? postHeaderGap : gap, width: '100%', display: 'flex', justifyContent: 'center', '@media (max-width: 600px)': { marginTop: headerIndex != -1 && index > headerIndex + 1 ? '-6px' : '-6px'} }}>
             <MediaRenderer media={media} />
           </Grid>
         </React.Fragment>
