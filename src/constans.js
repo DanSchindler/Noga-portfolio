@@ -4,6 +4,36 @@ const navBarOptions = {
 };
 const projectsData = [
   {
+    id: 9,
+    title: "KAZI \n Packaging",
+    description:
+      "KAZI   |   Packaging design for a vitamin and nutritional supplement company.",
+    imageUrl: "/assets/projects/KaziCover.png",
+    imageAlt: "kazi",
+    layout: "StackedImageLayout",
+    images: [
+      { url: "/assets/projects/kazi/kazi1.png", alt: "kazi1" },
+      { url: "/assets/projects/kazi/kazi2.png", alt: "kazi2" },
+      { url: "/assets/projects/kazi/kazi3.png", alt: "kazi3" },
+
+    ],
+  },
+  {
+    id: 10,
+    title: "The ARCHIVE \n Logo",
+    description:
+      "The Archive   |   Logo design for a store for vintage magazine collectors.",
+    imageUrl: "/assets/projects/ArchiveCover.png",
+    imageAlt: "archive",
+    layout: "StackedImageLayout",
+    images: [
+      { url: "/assets/projects/archive/archive3.png", alt: "archive-white-logo" },
+      { url: "/assets/projects/archive/archive1.png", alt: "archive-sign" },
+      { url: "/assets/projects/archive/archive2.png", alt: "archive-red-logo" },
+      { url: "/assets/projects/archive/archive4Grid.png", alt: "archive-grid" },
+    ],
+  },
+  {
     id: 2,
     title: "Zot Ani \n (This is Me)",
     description:
@@ -33,30 +63,6 @@ const projectsData = [
       { url: "/assets/projects/cebon/mockup-fig.png", alt: "fig-soap" },
       { url: "/assets/projects/cebon/mockup-mix.png", alt: "mix-soap" },
       { url: "/assets/projects/cebon/swimmers.png", alt: "swimmers" },
-    ],
-  },
-  {
-    id: 3,
-    title: "Album Cover \n Zohar Argov",
-    description:
-      'ZOHAR   |   Album Cover for the famous Israeli singer Zohar Argov. Zohar Argov, who was very famous in the 80’s, is widely known in Israel as "The king of Mizrahi (Middle Eastern) music". Print.',
-    imageUrl: "/assets/projects/zoharArgov.png",
-    imageAlt: "zoharArgov",
-    layout: "StackedImageLayout",
-    images: [
-      {
-        url: "/assets/projects/zohar/frontCoverZohar.png",
-        alt: "front-cover-zohar",
-      },
-      {
-        url: "/assets/projects/zohar/backCoverZohar.png",
-        alt: "back-cover-zohar",
-      },
-      {
-        url: "/assets/projects/zohar/openCoverZohar.png",
-        alt: "open-cover-zohar",
-      },
-      { url: "/assets/projects/zohar/zoharArgov.gif", alt: "zohar-show-gif" },
     ],
   },
   {
@@ -105,7 +111,22 @@ const projectsData = [
       },
     ],
   },
+  {
+    id: 11,
+    title: "Ambiguous Loss \n Poster",
+    description:
+      "Ambiguous Loss   |   The feeling of losing a person who is apparently still alive, but is actually not present with us physically or cognitively/emotionally. Posters. ",
+    imageUrl: "/assets/projects/AmbiguousLossCover.png",
+    imageAlt: "AmbiguousLoss",
+    layout: "StackedImageLayout",
+    images: [
+      { url: "/assets/projects/ambiguousLoss/ambiLoss1.png", alt: "ambiLoss1" },
+      { url: "/assets/projects/ambiguousLoss/ambiLoss2.png", alt: "ambiLoss2" },
+      { url: "/assets/projects/ambiguousLoss/ambiLoss3.png", alt: "ambiLoss3" },
+      { url: "/assets/projects/ambiguousLoss/ambiLoss4.png", alt: "ambiLoss4" },
 
+    ],
+  },
   {
     id: 5,
     title: "Sky Bubbles",
@@ -120,6 +141,30 @@ const projectsData = [
         alt: "skybuuble-demo",
         orientation: "horizontal",
       },
+    ],
+  },
+  {
+    id: 3,
+    title: "Album Cover \n Zohar Argov",
+    description:
+      'ZOHAR   |   Album Cover for the famous Israeli singer Zohar Argov. Zohar Argov, who was very famous in the 80’s, is widely known in Israel as "The king of Mizrahi (Middle Eastern) music". Print.',
+    imageUrl: "/assets/projects/zoharArgov.png",
+    imageAlt: "zoharArgov",
+    layout: "StackedImageLayout",
+    images: [
+      {
+        url: "/assets/projects/zohar/frontCoverZohar.png",
+        alt: "front-cover-zohar",
+      },
+      {
+        url: "/assets/projects/zohar/backCoverZohar.png",
+        alt: "back-cover-zohar",
+      },
+      {
+        url: "/assets/projects/zohar/openCoverZohar.png",
+        alt: "open-cover-zohar",
+      },
+      { url: "/assets/projects/zohar/zoharArgov.gif", alt: "zohar-show-gif" },
     ],
   },
   {

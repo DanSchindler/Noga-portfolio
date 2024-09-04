@@ -9,7 +9,7 @@ const StackedImageLayout = ({ project, gap = 20, postHeaderGap = 80 }) => {
   const headerIndex = project.headerIndex !== undefined ? project.headerIndex : -1;
 
   return (
-    <Box sx={{ width: '100%', margin: 'auto', gap: gap, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <Box sx={{ width: '100%', margin: 'auto', gap: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {project.coverMedia && (
         <>
           <MediaRenderer media={project.coverMedia} isCover />

@@ -26,7 +26,7 @@ const ProjectDetail = () => {
         {LayoutComponent ? (
           <LayoutComponent
             project={project}
-            gap={project.gap ? project.gap : "10px"}
+            gap={project.gap ? project.gap : "0px"}
             postHeaderGap={project.postHeaderGap ? project.postHeaderGap : "10px"}
           />
         ) : (
