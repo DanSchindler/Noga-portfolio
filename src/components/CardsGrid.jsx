@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 import Grid from '@mui/material/Grid';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const CardsGrid = ({ projectsData }) => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const getImageUrl = (project) => {
+        return isMobile ? project.imageUrlMobile : project.imageUrl;
+    };
+
     return (
         <Grid container spacing={1} justifyContent="flex" sx={{ marginTop: { xs: '50px', sm: '82px' } }}>
             {projectsData.map((project, index) => (
@@ -11,7 +20,7 @@ const CardsGrid = ({ projectsData }) => {
                         id={project.id}
                         title={project.title}
                         description={project.description}
-                        imageUrl={project.imageUrl}
+                        imageUrl={getImageUrl(project)}
                         imageAlt={project.imageAlt}
                     />
                 </Grid>

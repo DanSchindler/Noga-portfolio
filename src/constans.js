@@ -9,6 +9,7 @@ const projectsData = [
     description:
       "KAZI   |   Packaging design for a vitamin and nutritional supplement company.",
     imageUrl: "/assets/projects/KaziCover.png",
+    imageUrlMobile: "/assets/projects/KaziCoverMobile.png",
     imageAlt: "kazi",
     layout: "StackedImageLayout",
     images: [
@@ -24,6 +25,7 @@ const projectsData = [
     description:
       "The Archive   |   Logo design for a store for vintage magazine collectors.",
     imageUrl: "/assets/projects/ArchiveCover.png",
+    imageUrlMobile: "/assets/projects/ArchiveCoverMobile.png",
     imageAlt: "archive",
     layout: "StackedImageLayout",
     images: [
@@ -39,6 +41,7 @@ const projectsData = [
     description:
       "Zot Ani   |   “Zot Ani” means this is me. short video introducing me. Cut out Video.",
     imageUrl: "/assets/projects/zotAni.png",
+    imageUrlMobile:  "/assets/projects/zotAniMobile.png",
     imageAlt: "",
     layout: "StackedImageLayout",
     coverMedia: {
@@ -55,6 +58,7 @@ const projectsData = [
     title: "Cé Bon",
     description: "Cé Bon   |   Soap Bar Package design. ",
     imageUrl: "/assets/projects/cebon/mockup-mix-cover.png",
+    imageUrlMobile: "/assets/projects/cebonMobile.png",
     imageAlt: "soap",
     layout: "StackedImageLayout",
     images: [
@@ -70,6 +74,7 @@ const projectsData = [
     title: "ELIFELET \n Logo",
     description: "ELIFELET   |   Logo design inspired by street art.",
     imageUrl: "/assets/projects/elifelet.png",
+    imageUrlMobile: "/assets/projects/elifeletMobile.png",
     imageAlt: "elifelet",
     layout: "StackedImageLayout",
     headerIndex: 2, 
@@ -117,6 +122,7 @@ const projectsData = [
     description:
       "Ambiguous Loss   |   The feeling of losing a person who is apparently still alive, but is actually not present with us physically or cognitively/emotionally. Posters. ",
     imageUrl: "/assets/projects/AmbiguousLossCover.png",
+    imageUrlMobile: "/assets/projects/AmbiguousLossCoverMobile.png",
     imageAlt: "AmbiguousLoss",
     layout: "StackedImageLayout",
     images: [
@@ -133,6 +139,7 @@ const projectsData = [
     description:
       'ZOHAR   |   Album Cover for the famous Israeli singer Zohar Argov. Zohar Argov, who was very famous in the 80’s, is widely known in Israel as "The king of Mizrahi (Middle Eastern) music". Print.',
     imageUrl: "/assets/projects/zoharArgov.png",
+    imageUrlMobile:  "/assets/projects/zoharArgovMobile.png",
     imageAlt: "zoharArgov",
     layout: "StackedImageLayout",
     images: [
@@ -157,6 +164,7 @@ const projectsData = [
     description:
       "A-Z   |   An animation of a metamorphosis of the letter A into the letter Z. Classic animation.",
     imageUrl: "/assets/projects/a-z.png",
+    imageUrlMobile: "/assets/projects/a-zMobile.png",
     imageAlt: "a-z",
     layout: "StackedImageLayout",
     images: [
@@ -169,6 +177,7 @@ const projectsData = [
     description:
       "Sky Buubles   |   luxury hotel located on top of the highest mountains in the world. Website.",
     imageUrl: "/assets/projects/skyBubbles.png",
+    imageUrlMobile: "/assets/projects/skyBubblesMobile.png",
     imageAlt: "skyBubbles",
     layout: "StackedImageLayout",
     images: [
@@ -185,6 +194,7 @@ const projectsData = [
     description:
       "Constructivism Tools   |   Tools design inspired by Constructivism. Vector.",
     imageUrl: "/assets/projects/constructivisim.png",
+    imageUrlMobile:  "/assets/projects/constructivisimMobile.png",
     imageAlt: "constructivisim",
     layout: "StackedImageLayout",
     images: [
@@ -202,6 +212,7 @@ const projectsData = [
     id: 8,
     title: "Mix of Illustrations",
     imageUrl: "/assets/projects/frogiKusama.png",
+    imageUrlMobile:  "/assets/projects/frogiKusamaMobile.png",
     imageAlt: "frogiKusama",
     layout: "TwoSideGallery",
     images: [{ url: "/assets/projects/frogiKusama.png", alt: "frogiKusama" }],
