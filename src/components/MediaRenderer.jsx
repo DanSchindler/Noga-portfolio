@@ -40,7 +40,7 @@ const MediaRenderer = ({ media }) => {
 const styles = {
   gif: {
     maxWidth: "100%",
-    maxHeight: "1200px",
+    maxHeight: "8a00px",
     width: "auto",
     height: "auto",
     objectFit: "contain",
@@ -61,7 +61,7 @@ const styles = {
   },
   verticalVideo: {
     width: "85%",
-    maxWidth: '1000px',
+    maxWidth: '500px',
     height: "auto",
     '@media (max-width: 600px)': {
       width: "100%",

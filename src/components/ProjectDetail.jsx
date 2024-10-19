@@ -16,7 +16,7 @@ const ProjectDescription = ({ description, sx }) => {
   if (parts.length > 1) {
     return (
       <>
-        <Typography align="start" marginTop={"40px"} fontSize={{xs: "14px", lg:"22px"}} fontWeight={2000} marginLeft={{xs:'31px',lg:'10px'}} >
+        <Typography align="start" marginTop={"40px"} fontSize={{xs: "18px", lg:"22px"}} fontWeight={2000} marginLeft={{xs:'31px',lg:'10px'}} >
           <strong>{parts[0]}</strong>
         </Typography>
         <Typography sx={sx}>{parts.slice(1).join(" | ").trim()}</Typography>
@@ -58,7 +58,7 @@ const styles = {
   title: {
     color: "#000",
     fontFamily: "Poppins",
-    fontSize: "22px",
+    fontSize: "18px",
     fontStyle: "normal",
     fontWeight: "300",
     lineHeight: "149.805%",
@@ -67,7 +67,7 @@ const styles = {
     marginBottom: "50px",
     whiteSpace: "pre-wrap",
     "@media (max-width: 600px)": {
-      fontSize: "11px",
+      fontSize: "14px",
       lineHeight: "1.3",
       marginBottom: "40px",
       marginTop: "0px",

@@ -144,7 +144,7 @@ const projectsData = [
     title: "Zohar Argov",
     subTitle: "Album Cover",
     description:
-      'ZOHAR   |   Album Cover for the famous Israeli singer Zohar Argov. Zohar Argov, who was very famous in the 80’s, is widely known in Israel as "The king of Mizrahi (Middle Eastern) music". Print.',
+      'Zohar Argov   |   Album Cover for the famous Israeli singer Zohar Argov. Zohar Argov, who was very famous in the 80’s, is widely known in Israel as "The king of Mizrahi (Middle Eastern) music". Print.',
     imageUrl: "/assets/projects/zoharArgov.png",
     imageUrlMobile:  "/assets/projects/zoharArgovMobile.png",
     imageAlt: "zoharArgov",
