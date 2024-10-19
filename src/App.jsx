@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, ScrollRestoration } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import About from './About'; 
 import Portfolio from './Portfolio'; 
@@ -9,7 +9,7 @@ import ProjectDetail from './components/ProjectDetail';
 export function App() {
   return (
     <div style={style.appContainer}>
-    <Router>
+    <BrowserRouter>
       <NavBar />
       <Routes>
         <Route path="/" element={<Portfolio />} />
@@ -17,8 +17,7 @@ export function App() {
         <Route path="/project/:id" element={<ProjectDetail />} />
       </Routes>
       <Footer/>
-    </Router>    
-
+    </BrowserRouter>    
     </div>
   );
 }

@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './App.css'
 import UnderConstruction from './screens/UnderConstruction.jsx'
 import { Container, useMediaQuery } from '@mui/material'
+import {ScrollRestoration } from 'react-router-dom';
 
 const Root = () => {
   const isMobile = useMediaQuery('(max-width:600px)')
@@ -19,6 +20,7 @@ const Root = () => {
     >
       {/* <UnderConstruction/> */}
       <App />
+  
     </Container>
   )
 }
