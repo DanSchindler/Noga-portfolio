@@ -66,7 +66,7 @@ body {
 }
 
 .about {
-  margin-right: 46px;
+  margin-right: 64px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -83,8 +83,8 @@ body {
 }
 
 .underline-about {
-  left: -46px; /* Adjust as needed */
-  right: -46px; /* Adjust as needed */
+  left: -64px; /* Adjust as needed */
+  right: -64px; /* Adjust as needed */
 }
 
 .nav-list-container {
