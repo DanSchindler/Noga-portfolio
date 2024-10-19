@@ -22,7 +22,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 
   }
 `;
@@ -36,7 +36,7 @@ const Text = styled.div`
   font-weight: 300;
   line-height: 1.5;
   margin-left: 10px;
-  max-width: 90%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
 
@@ -49,10 +49,12 @@ const Text = styled.div`
     width: 100%;
     text-align: start;
     font-size: 14px;
+
   }
 
   @media (max-width: 480px) {
     font-size: 12px;
+    max-width: 360px;
   }
 `;
 

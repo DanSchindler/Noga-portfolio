@@ -15,7 +15,7 @@ const CardsGrid = ({ projectsData }) => {
   return (
     <Grid
       container
-      spacing={{ xs: 0, sm: 0, md: 2, lg: 1, xl: 1  }}
+      spacing={{ xs: 0.5, sm: 0.5, md: 2, lg: 1, xl: 1  }}
       justifyContent="flex"
       sx={{ marginTop: { xs: "50px", sm: "82px" } }}
     >
