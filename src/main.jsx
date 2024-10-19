@@ -11,6 +11,7 @@ const Root = () => {
   return (
     <Container
       maxWidth="false"
+      disableGutters
       sx={{
         width: isMobile ? '100%' : '85%',
         maxWidth: isMobile ? '100%' : '2250px',
