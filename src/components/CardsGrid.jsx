@@ -19,6 +19,7 @@ const CardsGrid = ({ projectsData }) => {
                     <ProjectCard
                         id={project.id}
                         title={project.title}
+                        subTitle={project.subTitle}
                         description={project.description}
                         imageUrl={getImageUrl(project)}
                         imageAlt={project.imageAlt}

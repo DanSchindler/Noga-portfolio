@@ -5,7 +5,8 @@ const navBarOptions = {
 const projectsData = [
   {
     id: 9,
-    title: "KAZI \n Packaging",
+    title: "KAZI",
+    subTitle: "Packaging",
     description:
       "KAZI   |   Packaging design for a vitamin and nutritional supplement company.",
     imageUrl: "/assets/projects/KaziCover.png",
@@ -21,7 +22,8 @@ const projectsData = [
   },
   {
     id: 10,
-    title: "The ARCHIVE \n Logo",
+    title: "The ARCHIVE",
+    subTitle: "Logo",
     description:
       "The Archive   |   Logo design for a store for vintage magazine collectors.",
     imageUrl: "/assets/projects/ArchiveCover.png",
@@ -37,7 +39,8 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Zot Ani \n (This is Me)",
+    title: "Zot Ani",
+    subTitle: "Video",
     description:
       "Zot Ani   |   “Zot Ani” means this is me. short video introducing me. Cut out Video.",
     imageUrl: "/assets/projects/zotAni.png",
@@ -55,7 +58,8 @@ const projectsData = [
   },
   {
     id: 1,
-    title: "Cé Bon \n Packaging",
+    title: "Cé Bon",
+    subTitle: "Packaging",
     description: "Cé Bon   |   Soap Bar Package design. ",
     imageUrl: "/assets/projects/cebon/mockup-mix-cover.png",
     imageUrlMobile: "/assets/projects/cebonMobile.png",
@@ -71,7 +75,8 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "ELIFELET \n Logo",
+    title: "ELIFELET",
+    subTitle: "Logo",
     description: "ELIFELET   |   Logo design inspired by street art.",
     imageUrl: "/assets/projects/elifelet.png",
     imageUrlMobile: "/assets/projects/elifeletMobile.png",
@@ -118,7 +123,8 @@ const projectsData = [
   },
   {
     id: 11,
-    title: "Ambiguous Loss \n Poster",
+    title: "Ambiguous Loss",
+    subTitle: "Posters",
     description:
       "Ambiguous Loss   |   The feeling of losing a person who is apparently still alive, but is actually not present with us physically or cognitively/emotionally. Posters. ",
     imageUrl: "/assets/projects/AmbiguousLossCover.png",
@@ -135,7 +141,8 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Album Cover \n Zohar Argov",
+    title: "Zohar Argov",
+    subTitle: "Album Cover",
     description:
       'ZOHAR   |   Album Cover for the famous Israeli singer Zohar Argov. Zohar Argov, who was very famous in the 80’s, is widely known in Israel as "The king of Mizrahi (Middle Eastern) music". Print.',
     imageUrl: "/assets/projects/zoharArgov.png",
@@ -160,7 +167,8 @@ const projectsData = [
   },
   {
     id: 7,
-    title: "A - Z Animation",
+    title: "A - Z",
+    subTitle: "Animation",
     description:
       "A-Z   |   An animation of a metamorphosis of the letter A into the letter Z. Classic animation.",
     imageUrl: "/assets/projects/a-z.png",
@@ -174,6 +182,7 @@ const projectsData = [
   {
     id: 5,
     title: "Sky Bubbles",
+    subTitle: "UX/UI",
     description:
       "Sky Buubles   |   luxury hotel located on top of the highest mountains in the world. Website.",
     imageUrl: "/assets/projects/skyBubbles.png",
@@ -190,7 +199,8 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Constructivisim \n Tools",
+    title: "Constructivisim Tools",
+    subTitle: "Poster",
     description:
       "Constructivism Tools   |   Tools design inspired by Constructivism. Vector.",
     imageUrl: "/assets/projects/constructivisim.png",

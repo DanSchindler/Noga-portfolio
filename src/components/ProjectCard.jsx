@@ -5,10 +5,14 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import '../App.css'
 import { useNavigate } from 'react-router-dom';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
-function ProjectCard({ id,title, imageUrl, imageAlt }) {
+function ProjectCard({ id,title, subTitle, imageUrl, imageAlt }) {
   const [hover, setHover] = useState(false);
   const navigate = useNavigate();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   const handleCardClick = () => {
     navigate(`/project/${id}`);
@@ -30,13 +34,16 @@ function ProjectCard({ id,title, imageUrl, imageAlt }) {
         />
         <div style={{
           ...style.cardGrayCover,
-          opacity: hover ? 1 : 0,
+          opacity: hover && !isMobile ? 1 : 0,
         }} />
         {hover && (
         <CardContent sx={style.projectContent}>
-          <Typography variant="h5" component="div" fontFamily={'Poppins'}>
+          <Typography  fontFamily={'Poppins'} fontStyle={'normal'} fontSize={'30px'} fontWeight={'500'} lineHeight={'30px'} color={'#fff'} textAlign={'center'}>
             {title}
           </Typography>
+          {subTitle && !isMobile && <Typography fontFamily={'Poppins'} fontStyle={'normal'} fontSize={'20px'} fontWeight={'275'} lineHeight={'20px'} color={'#fff'} textAlign={'center'} marginTop={'16px'}>
+            {subTitle}
+          </Typography>}
         </CardContent>
       )}
     </Card>
