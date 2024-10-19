@@ -49,6 +49,20 @@ const NavBar = () => {
       </div>
       <div className="nav-list-container">
         <nav className="navbar-list">
+        <Link
+            to="/"
+            key={navBarOptions.portfolio}
+            className={"portfolio"}
+            onClick={() => setSelectedTab(navBarOptions.portfolio)}
+          >
+            portfolio
+            {selectedTab === navBarOptions.portfolio && (
+              <motion.div
+                className="underline underline-portfolio"
+                layoutId="underline"
+              />
+            )}
+          </Link>
           <Link
             to="/about"
             key={navBarOptions.about}
@@ -63,20 +77,7 @@ const NavBar = () => {
               />
             )}
           </Link>
-          <Link
-            to="/"
-            key={navBarOptions.portfolio}
-            className={"portfolio"}
-            onClick={() => setSelectedTab(navBarOptions.portfolio)}
-          >
-            portfolio
-            {selectedTab === navBarOptions.portfolio && (
-              <motion.div
-                className="underline underline-portfolio"
-                layoutId="underline"
-              />
-            )}
-          </Link>
+          
         </nav>
         <main></main>
       </div>

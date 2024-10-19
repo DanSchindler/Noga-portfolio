@@ -9,6 +9,23 @@ const layouts = {
   TwoSideGallery: lazy(() => import("./Layouts/TwoSideGallery")),
 };
 
+const ProjectDescription = ({ description, sx }) => {
+  if (!description) return null;
+
+  const parts = description.split(" | ");
+  if (parts.length > 1) {
+    return (
+      <>
+        <Typography align="start" marginTop={"40px"} fontSize={{sm: "14px", lg:"22px"}} fontWeight={2000} marginLeft={{sx:'31px',lg:'10px'}} >
+          <strong>{parts[0]}</strong>
+        </Typography>
+        <Typography sx={sx}>{parts.slice(1).join(" | ").trim()}</Typography>
+      </>
+    );
+  }
+  return <Typography sx={sx}>{description}</Typography>;
+};
+
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = projectsData.find((p) => p.id === parseInt(id));
@@ -21,13 +38,13 @@ const ProjectDetail = () => {
 
   return (
     <Box>
-      {project.description && <Typography sx={styles.title}>{project.description}</Typography>}
+      <ProjectDescription description={project.description} sx={styles.title} />
       <Suspense fallback={<Box sx={styles.spinner}>Loading...</Box>}>
         {LayoutComponent ? (
           <LayoutComponent
             project={project}
-            gap={project.gap ? project.gap : "0px"}
-            postHeaderGap={project.postHeaderGap ? project.postHeaderGap : "10px"}
+            gap={project.gap || "0px"}
+            postHeaderGap={project.postHeaderGap || "10px"}
           />
         ) : (
           <UnderConstruction />
@@ -46,13 +63,16 @@ const styles = {
     fontWeight: "300",
     lineHeight: "149.805%",
     margin: "auto",
-    marginLeft: '10px',
+    marginLeft: "10px",
     marginBottom: "50px",
     whiteSpace: "pre-wrap",
-    '@media (max-width: 600px)': {
-      fontSize: "12px",
-      marginBottom: "20px",
-      marginTop: "30px"
+    "@media (max-width: 600px)": {
+      fontSize: "11px",
+      lineHeight: "1.3",
+      marginBottom: "40px",
+      marginTop: "0px",
+      marginLeft: "31px",
+      marginRight: "31px",
     },
   },
   notFound: {
@@ -66,7 +86,7 @@ const styles = {
     marginBottom: "50px",
     whiteSpace: "pre-wrap",
     textAlign: "center",
-    '@media (max-width: 600px)': {
+    "@media (max-width: 600px)": {
       fontSize: "18px",
       marginBottom: "30px",
     },

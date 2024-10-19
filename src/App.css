@@ -19,7 +19,6 @@ body {
 .navbar-list {
   display: flex;
   justify-content: space-between;
-  
   margin: auto;
   font-size: 20px;
   font-weight: 300;
@@ -61,12 +60,12 @@ body {
   position: relative;
 }
 
-.about {
+.portfolio {
   margin-left: 64px;
   font-family: "Poppins", sans-serif;
 }
 
-.portfolio {
+.about {
   margin-right: 46px;
   font-family: "Poppins", sans-serif;
 }
@@ -78,12 +77,12 @@ body {
   background: var(--accent);
 }
 
-.underline-about {
+.underline-portfolio {
   left: -64px; /* Adjust as needed */
   right: -64px; /* Adjust as needed */
 }
 
-.underline-portfolio {
+.underline-about {
   left: -46px; /* Adjust as needed */
   right: -46px; /* Adjust as needed */
 }
@@ -124,22 +123,22 @@ body {
   .portfolio {
     font-size: 16px; /* Smaller font size for smaller screens */
   }
-  .about {
+  .portfolio {
     margin-left: 20px;
     margin-right: auto;
   }
 
-  .portfolio {
+  .about {
     margin-left: auto;
     margin-right: 20px;
   }
   
-  .underline-about {
+  .underline-portfolio {
     left: -20px; /* Adjust as needed for smaller screens */
     right: -20px; /* Adjust as needed for smaller screens */
   }
   @media (max-width: 480px) {
-    .underline-about
+    .underline-portfolio
     {
       left: -31px; /* Adjust as needed for smaller screens */
       right: -31px; /* Adjust as needed for smaller screens */
@@ -169,12 +168,12 @@ body {
     }
   }
 
-  .underline-portfolio {
+  .underline-about {
     left: -20px; /* Adjust as needed for smaller screens */
     right: -20px; /* Adjust as needed for smaller screens */
   }
   @media (max-width: 480px) {
-    .underline-portfolio
+    .underline-about
     {
       left: -31px; /* Adjust as needed for smaller screens */
       right: -31px; /* Adjust as needed for smaller screens */
@@ -182,14 +181,14 @@ body {
     }
   }
   @media (max-width: 480px) {
-    .about
+    .portfolio
     {
       margin-left: 31px;
 
     }
   }
   @media (max-width: 480px) {
-    .portfolio
+    .about
     {
       margin-right: 31px;
 
