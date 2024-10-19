@@ -13,7 +13,7 @@ const Footer = () => {
     <Box
       sx={{
         width: "100%",
-        padding: "5px 0",
+        padding: "0",
         backgroundColor: "#fdfdfd",
         borderTop: "1px solid #000",
         borderBottom: "1px solid #000",
@@ -75,7 +75,7 @@ const Footer = () => {
             fontSize: isMobile ? "12px" : "16px",
             fontWeight: 300,
             display: "block",
-            margin: "5px",
+            margin: "2.5px",
           }}
         >
           nogarosner@gmail.com

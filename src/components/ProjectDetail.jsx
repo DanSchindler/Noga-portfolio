@@ -46,6 +46,7 @@ const styles = {
     fontWeight: "300",
     lineHeight: "149.805%",
     margin: "auto",
+    marginLeft: '10px',
     marginBottom: "50px",
     whiteSpace: "pre-wrap",
     '@media (max-width: 600px)': {

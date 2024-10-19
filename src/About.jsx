@@ -35,10 +35,10 @@ const Text = styled.div`
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
-  margin: 0;
+  margin-left: 10px;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center the text */
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -105,7 +105,7 @@ const HeadLine = styled.h1`
 
 const Paragraph = styled.p`
   margin: 0 0 1em 0;
-  max-width: 70%;
+  max-width: 90%;
 
   @media (max-width: 1024px) {
     font-size: 18px;
@@ -124,7 +124,7 @@ const Paragraph = styled.p`
 
 const Skills = styled.p`
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
   position: relative;
   padding-left: 1em; /* Adjust padding to account for the ">" symbol */
   text-indent: -1em; /* Negative indent to pull the text back to the start */
