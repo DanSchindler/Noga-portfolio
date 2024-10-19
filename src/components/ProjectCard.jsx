@@ -52,7 +52,6 @@ const style = {
     width: '100%',  
     boxShadow: 'none', 
 
-
   },
   cardImg: {
     height: '100%',

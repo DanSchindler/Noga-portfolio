@@ -55,7 +55,7 @@ const projectsData = [
   },
   {
     id: 1,
-    title: "Cé Bon",
+    title: "Cé Bon \n Packaging",
     description: "Cé Bon   |   Soap Bar Package design. ",
     imageUrl: "/assets/projects/cebon/mockup-mix-cover.png",
     imageUrlMobile: "/assets/projects/cebonMobile.png",
