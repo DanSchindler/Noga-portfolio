@@ -16,7 +16,7 @@ const ProjectDescription = ({ description, sx }) => {
   if (parts.length > 1) {
     return (
       <>
-        <Typography align="start" marginTop={"40px"} fontSize={{sm: "14px", lg:"22px"}} fontWeight={2000} marginLeft={{sx:'31px',lg:'10px'}} >
+        <Typography align="start" marginTop={"40px"} fontSize={{xs: "14px", lg:"22px"}} fontWeight={2000} marginLeft={{xs:'31px',lg:'10px'}} >
           <strong>{parts[0]}</strong>
         </Typography>
         <Typography sx={sx}>{parts.slice(1).join(" | ").trim()}</Typography>

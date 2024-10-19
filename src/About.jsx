@@ -54,7 +54,8 @@ const Text = styled.div`
 
   @media (max-width: 480px) {
     font-size: 12px;
-    max-width: 85%;
+    margin-right: 12px;
+    max-width: 80%;
   }
 `;
 
