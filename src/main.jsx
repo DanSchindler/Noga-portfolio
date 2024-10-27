@@ -15,12 +15,11 @@ const Root = () => {
       disableGutters
       sx={{
         width: isMobile ? '100%' : '90%',
-        maxWidth: isMobile ? '100%' : '3000px',
+        maxWidth: isMobile ? '100%' : '2000px',
       }}
     >
       {/* <UnderConstruction/> */}
       <App />
-  
     </Container>
   )
 }

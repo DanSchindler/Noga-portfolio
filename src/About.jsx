@@ -31,9 +31,9 @@ const Text = styled.div`
   flex: 2; /* Take up more space */
   color: #000;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.5;
   margin-left: 10px;
   max-width: 1000px;
@@ -121,7 +121,8 @@ const Paragraph = styled.p`
   }
 
   @media (max-width: 480px) {
-    font-size: 14px;
+    font-size: 12px; 
+
   }
 `;
 

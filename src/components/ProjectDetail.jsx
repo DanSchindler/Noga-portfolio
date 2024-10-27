@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { projectsData } from "../constans";
 import UnderConstruction from "../screens/UnderConstruction";
@@ -30,6 +30,10 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const project = projectsData.find((p) => p.id === parseInt(id));
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]); 
+
   if (!project) {
     return <Typography sx={styles.notFound}>Project not found</Typography>;
   }
@@ -58,16 +62,16 @@ const styles = {
   title: {
     color: "#000",
     fontFamily: "Poppins",
-    fontSize: "18px",
+    fontSize: "15px",
     fontStyle: "normal",
-    fontWeight: "300",
+    fontWeight: "200",
     lineHeight: "149.805%",
     margin: "auto",
     marginLeft: "10px",
     marginBottom: "50px",
     whiteSpace: "pre-wrap",
     "@media (max-width: 600px)": {
-      fontSize: "14px",
+      fontSize: "12px",
       lineHeight: "1.3",
       marginBottom: "40px",
       marginTop: "0px",
