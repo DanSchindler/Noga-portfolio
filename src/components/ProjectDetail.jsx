@@ -27,7 +27,7 @@ const ProjectDescription = ({ description, sx, courseDetails }) => {
           <Typography
             marginTop={"40px"}
             fontSize={"18px"}
-            fontWeight={2000}
+            fontWeight={600}
             marginLeft={"31px"}
           >
             {parts[0]}
