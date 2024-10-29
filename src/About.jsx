@@ -16,6 +16,7 @@ const Container = styled.div`
   @media (max-width: 1024px) {
     flex-wrap: wrap; /* Enable wrapping for medium screens */
     margin-top: 20px;
+    margin-bottom: 0px;
   }
 
   @media (max-width: 768px) {
@@ -23,7 +24,7 @@ const Container = styled.div`
     align-items: center;
     gap: 20px;
     margin-top: 50px;
-
+    margin-bottom: 0px;
   }
 `;
 
@@ -122,7 +123,6 @@ const Paragraph = styled.p`
 
   @media (max-width: 480px) {
     font-size: 12px; 
-
   }
 `;
 

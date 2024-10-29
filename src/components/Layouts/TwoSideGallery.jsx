@@ -48,7 +48,6 @@ const TwoSideGallery = () => {
           }}
         >
           <Typography
-            align="start"
             fontSize={{ xs: "18px", lg: "22px" }}
             fontWeight={2000}
             marginLeft={{ xs: "31px", lg: "0px" }}
@@ -95,7 +94,6 @@ const TwoSideGallery = () => {
       <Grid container spacing={2} sx={{ marginTop: { xs: 4, md: -25 } }}>
         <Grid item xs={12} md={5}>
           <Typography
-            align="start"
             fontSize={{ xs: "18px", lg: "22px" }}
             marginLeft={{ xs: "31px", lg: "10px" }}
             fontWeight={2000}
@@ -151,7 +149,6 @@ const TwoSideGallery = () => {
           }}
         >
           <Typography
-            align="start"
             fontSize={{ xs: "18px", lg: "22px" }}
             fontWeight={2000}
             marginLeft={{ xs: "31px", lg: "0px" }}
@@ -171,7 +168,6 @@ const TwoSideGallery = () => {
         </Grid>
         <Grid item xs={12} md={5} sx={{ marginTop: { xs: 4, md: 9 } }}>
           <Typography
-            align="start"
             fontSize={{ xs: "18px", lg: "22px" }}
             marginLeft={{ xs: "31px", lg: "10px" }}
             fontWeight={2000}
@@ -222,7 +218,7 @@ const TwoSideGallery = () => {
         </Grid>
       </Grid>
     </Box>
-  );
+  );  
 };
 
 const style = {

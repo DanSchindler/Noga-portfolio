@@ -20,8 +20,8 @@ function ProjectCard({ id, title, subTitle, imageUrl, imageAlt }) {
 
   return (
     <Card
-      sx={style.card}
-      onMouseOver={() => setHover(true)}
+    style={{ ...style.card, cursor: "pointer" }} // Add cursor pointer here
+    onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
       onClick={handleCardClick}
     >

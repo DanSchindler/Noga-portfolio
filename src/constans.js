@@ -4,11 +4,12 @@ const navBarOptions = {
 };
 const projectsData = [
   {
-    id: 9,
+    id: 1,
     title: "KAZI",
     subTitle: "Packaging",
     description:
-      "KAZI   |   Packaging design for a vitamin and nutritional supplement company.",
+      "KAZI   |   packaging design for KAZI - a vitamin and nutritional supplement brand, inspired by calendars and office elements to make taking daily vitamins easier to remember. The packaging is both attractive and interactive, featuring a refillable design that can be updated each month. With sleek, organized layouts and a functional design, KAZI helps users stay on track with their health routines while fitting seamlessly into a workspace or home environment.",
+    courseDetails: "[ Packaging  |  2024 ]",
     imageUrl: "/assets/projects/KaziCover.png",
     imageUrlMobile: "/assets/projects/KaziCoverMobile.png",
     imageAlt: "kazi",
@@ -17,39 +18,43 @@ const projectsData = [
       { url: "/assets/projects/kazi/kazi1.png", alt: "kazi1" },
       { url: "/assets/projects/kazi/kazi2.png", alt: "kazi2" },
       { url: "/assets/projects/kazi/kazi3.png", alt: "kazi3" },
-
     ],
   },
   {
-    id: 10,
+    id: 2,
     title: "The ARCHIVE",
     subTitle: "Logo",
     description:
-      "The Archive   |   Logo design for a store for vintage magazine collectors.",
+      "The Archive   |   The logo is for a boutique store, specializing in rare and vintage magazines, is a blend of old-school charm and modern design, crafted to appeal to magazine collectors and vintage enthusiasts alike. It captures the store’s unique character as a fusion of past and present, inspired by values of density, authenticity, nostalgia, and eclecticism. The design reflects a deep appreciation for print culture’s rich history.",
+    courseDetails: "[ Logo Design  |  2024 ]",
     imageUrl: "/assets/projects/ArchiveCover.png",
     imageUrlMobile: "/assets/projects/ArchiveCoverMobile.png",
     imageAlt: "archive",
     layout: "StackedImageLayout",
     images: [
-      { url: "/assets/projects/archive/archive3.png", alt: "archive-white-logo" },
+      {
+        url: "/assets/projects/archive/archive3.png",
+        alt: "archive-white-logo",
+      },
       { url: "/assets/projects/archive/archive1.png", alt: "archive-sign" },
       { url: "/assets/projects/archive/archive2.png", alt: "archive-red-logo" },
       { url: "/assets/projects/archive/archive4Grid.png", alt: "archive-grid" },
     ],
   },
   {
-    id: 12,
+    id: 3,
     title: "Everyone Looks the Same",
     subTitle: "Editorial Design",
     description:
-      "Everyone looks the same  |   This book project offers a visual exploration of the traditional clothing styles of the ultra-Orthodox Jewish community. Through detailed imagery and descriptions, it examines the symbolism, historical significance, and cultural identity expressed in these garments.",
+      "Everyone looks the same  |   This book project offers a visual exploration of the traditional clothing styles of the ultra -Orthodox Jewish community. Through detailed imagery and descriptions, it examines the symbolism, historical significance, and cultural identity expressed in these garments.",
+    courseDetails: "[ Editorial Design  |  2024 ]",
     imageUrl: "/assets/projects/LookTheSameCover.png",
-    imageUrlMobile:  "/assets/projects/LookTheSameMobile.png",
+    imageUrlMobile: "/assets/projects/LookTheSameMobile.png",
     imageAlt: "LookTheSame",
     layout: "StackedImageLayout",
     images: [
       {
-        url: "/assets/projects/LookTheSame/lookTheSame1.png", 
+        url: "/assets/projects/LookTheSame/lookTheSame1.png",
         alt: "lookTheSame1",
       },
       {
@@ -58,7 +63,7 @@ const projectsData = [
       },
       {
         url: "/assets/projects/LookTheSame/lookTheSame3.png",
-        alt: "lookTheSame3", 
+        alt: "lookTheSame3",
       },
       {
         url: "/assets/projects/LookTheSame/lookTheSame4.png",
@@ -120,16 +125,17 @@ const projectsData = [
         url: "/assets/projects/LookTheSame/lookTheSame18.png",
         alt: "lookTheSame18",
       },
-     ],
+    ],
   },
   {
-    id: 2,
+    id: 4,
     title: "Zot Ani",
     subTitle: "Video",
     description:
-      "Zot Ani   |   “Zot Ani” means this is me. short video introducing me. Cut out Video.",
+      "Zot Ani   |   “Zot Ani” means in Hebrew “this is me”. This short video is a personal introduction, capturing who I am through different angles and interests.",
+    courseDetails: "[ Video  |  2024 ]",
     imageUrl: "/assets/projects/zotAni.png",
-    imageUrlMobile:  "/assets/projects/zotAniMobile.png",
+    imageUrlMobile: "/assets/projects/zotAniMobile.png",
     imageAlt: "",
     layout: "StackedImageLayout",
     coverMedia: {
@@ -142,11 +148,12 @@ const projectsData = [
     ],
   },
   {
-    id: 11,
+    id: 5,
     title: "Ambiguous Loss",
     subTitle: "Posters",
     description:
-      "Ambiguous Loss   |   The feeling of losing a person who is apparently still alive, but is actually not present with us physically or cognitively/emotionally. Posters. ",
+      "Ambiguous Loss   |   series of posters that explore the concept of Ambiguous Loss, which describes the emotional experience of losing someone who is apparently still alive, but emotionally or physically absent. To convey this complex feeling, I chose the color yellow, symbolizing hope and resilience, especially in the context of Israel's ongoing struggle to bring hostages back home from captivity in Gaza. The posters aim to evoke a sense of longing and awareness, capturing the pain of uncertainty while also highlighting the collective effort to reconnect with those who are missing in both body and spirit.",
+    courseDetails: "[ Posters  |  2024 ]",
     imageUrl: "/assets/projects/AmbiguousLossCover.png",
     imageUrlMobile: "/assets/projects/AmbiguousLossCoverMobile.png",
     imageAlt: "AmbiguousLoss",
@@ -156,21 +163,22 @@ const projectsData = [
       { url: "/assets/projects/ambiguousLoss/ambiLoss2.png", alt: "ambiLoss2" },
       { url: "/assets/projects/ambiguousLoss/ambiLoss3.png", alt: "ambiLoss3" },
       { url: "/assets/projects/ambiguousLoss/ambiLoss4.png", alt: "ambiLoss4" },
-
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "ELIFELET",
     subTitle: "Logo",
-    description: "ELIFELET   |   This branding project for an urban brewery that is as much a part of the city's culture as it is a place to craft exceptional beer. Inspired by the energy and diversity of city life, the brewery embraces the grit, creativity, and raw authenticity found in urban environments. The minimalist color palette emphasizes bold lines and high contrast, giving the brand a clean yet edgy identity that resonates with a modern, urban audience.",
+    description:
+      "ELIFELET   |   ELIFELET is an urban brewery that is as much a part of the city's culture as it is a place to craft exceptional beer. The logo design is Inspired by the energy and diversity of city life. The design embraces the grit, creativity, and raw authenticity found in urban environments. The minimalist color palette emphasizes bold lines and high contrast, giving the brand a clean yet edgy identity that resonates with a modern, urban audience.",
+    courseDetails: "[ Logo Design  |  2024 ]",
     imageUrl: "/assets/projects/elifelet.png",
     imageUrlMobile: "/assets/projects/elifeletMobile.png",
     imageAlt: "elifelet",
     layout: "StackedImageLayout",
-    headerIndex: 1, 
-    gap: '10px',
-    postHeaderGap: '110px',
+    headerIndex: 1,
+    gap: "10px",
+    postHeaderGap: "110px",
     process: true,
     images: [
       {
@@ -184,30 +192,44 @@ const projectsData = [
       {
         url: "/assets/projects/elifelet/graffity.png",
         alt: "graffity-elifelet",
+        description:
+          "Step 1  |  Finding Inspiration: The process began by exploring various graffiti styles to capture the raw, expressive energy of street art. After reviewing multiple styles, one specific graffiti piece was chosen to serve as the core inspiration for the design. This piece guided the creative direction for the rest of the process, grounding the brand in a unique, urban aesthetic.",
       },
       {
         url: "/assets/projects/elifelet/processIdeas.png",
         alt: "processIdeas-elifelet",
+        description:
+          "Step 2 |   Discovering Interesting Shapes: Identifying unique shapes within graffiti style by observing the negative and positive spaces. The goal was to find shapes that are both striking and versatile, conveying a sense of movement and personality that aligns with the brewing brand’s identity.",
         orientation: "smaller",
-        
       },
       {
         url: "/assets/projects/elifelet/processSymbol.png",
         alt: "processSymbol-elifelet",
+        description:
+          "Step 3 |   Selecting the Main Shape: From the pool of shapes, one main shape was chosen as the foundation of the brand’s logo. This shape served as a base, representing the core of the brand and setting the tone for the logo’s overall look.",
         orientation: "vertical smaller",
       },
-      { url: "/assets/projects/elifelet/letters.png", alt: "letters-elifelet" },
       {
-        url: "/assets/projects/elifelet/mainLogo.png",
+        url: "/assets/projects/elifelet/letters.png",
+        alt: "letters-elifelet",
+        description:
+          "Step 4 |   Creating Hebrew Lettering: Using the chosen shape as a guide, custom Hebrew letters were designed to embody its essence. Each letter was crafted to reflect the bold, edgy character of the shape, aligning with the graffiti-inspired theme and giving the brand a distinct urban edge in its lettering.",
+      },
+      {
+        url: "/assets/projects/elifelet/mainLogoSmall.png",
         alt: "mainLogo-elifelet",
+        description:
+          "Step 5 |   Final Logo: With the Hebrew lettering complete, the final step was to bring everything together into a harmonized logo. The chosen shape, combined with the custom letters, formed a bold, graffiti-inspired logo that embodies the brand’s urban, edgy personality. The minimalist black-and-white color palette highlighted the contrast and structure of the design, giving the logo a modern yet raw feel that resonates with the essence of street art.",
       },
     ],
   },
   {
-    id: 1,
+    id: 7,
     title: "Cé Bon",
     subTitle: "Packaging",
-    description: "Cé Bon   |   The 'Ce Bon' soap packaging is inspired by the elegant style of Art Deco posters, bringing a French feel to each design. The name  'Ce Bon', meaning 'something good' in French, and the clean lines, and vintage colors give the soap a classic, stylish look. The result is a timeless package that adds a touch of French charm to everyday soap - something you’d want to keep even after use. ",
+    description:
+      "Cé Bon   |   The 'Ce Bon' soap packaging is inspired by the elegant style of Art Deco posters, bringing a French feel to each design. The name  'Ce Bon', meaning 'something good' in French, and the clean lines, and vintage colors give the soap a classic, stylish look. The result is a timeless package that adds a touch of French charm to everyday soap - something you’d want to keep even after use.",
+    courseDetails: "[ Packaging  |  2024 ]",
     imageUrl: "/assets/projects/cebon/mockup-mix-cover.png",
     imageUrlMobile: "/assets/projects/cebonMobile.png",
     imageAlt: "soap",
@@ -221,13 +243,14 @@ const projectsData = [
     ],
   },
   {
-    id: 3,
+    id: 8,
     title: "Zohar Argov",
     subTitle: "Album Cover",
     description:
-      'Zohar Argov   |   Album Cover for the famous Israeli singer Zohar Argov. Zohar Argov, who was very famous in the 80’s, is widely known in Israel as "The king of Mizrahi (Middle Eastern) music". Print.',
+      "Zohar Argov   |   Album Cover and packaging design for the famous Israeli singer Zohar Argov, often called 'The King of Mizrahi Music.' Argov made a big impact on Israeli culture with his unique voice. This design is inspired by the 1980s, when Argov was at his peak, combining a vintage feel with Mediterranean style. Using colors, fonts, and patterns, I aimed to capture both the nostalgic vibe of his era and the lasting influence of his music.",
+    courseDetails: "[ Packaging  |  2023 ]",
     imageUrl: "/assets/projects/zoharArgov.png",
-    imageUrlMobile:  "/assets/projects/zoharArgovMobile.png",
+    imageUrlMobile: "/assets/projects/zoharArgovMobile.png",
     imageAlt: "zoharArgov",
     layout: "StackedImageLayout",
     images: [
@@ -247,11 +270,12 @@ const projectsData = [
     ],
   },
   {
-    id: 5,
+    id: 9,
     title: "Sky Bubbles",
     subTitle: "UX/UI",
     description:
-      "Sky Buubles   |   luxury hotel located on top of the highest mountains in the world. Website.",
+      "Sky Buubles   |   Sky Bubbles is a website concept I designed to offer a unique, dream-like experience for booking a vacation in an imaginary luxury hotel perched atop the world’s highest mountains. I crafted the UX/UI to immerse users in an atmosphere of serenity and elevation, evoking transparency and open skies, with design elements that blend seamlessly with cloud-like visuals. The interface is intuitive and light, giving users the sensation of floating above the world, surrounded by endless views. Sky Bubbles is designed for those seeking an exclusive and ethereal escape, combining luxury with the breathtaking beauty of nature.",
+    courseDetails: "[ UX/UI  |  2024 ]",
     imageUrl: "/assets/projects/skyBubbles.png",
     imageUrlMobile: "/assets/projects/skyBubblesMobile.png",
     imageAlt: "skyBubbles",
@@ -265,11 +289,12 @@ const projectsData = [
     ],
   },
   {
-    id: 7,
+    id: 10,
     title: "A - Z",
     subTitle: "Animation",
     description:
-      "A-Z   |   An animation of a metamorphosis of the letter A into the letter Z. Classic animation.",
+      "A-Z   |   A short video that illustrates the transformation of the letter A as it morphs into the letter Z through shifting a series of dynamic shapes.",
+    courseDetails: "[ Classic Animation  |  2024 ]",
     imageUrl: "/assets/projects/a-z.png",
     imageUrlMobile: "/assets/projects/a-zMobile.png",
     imageAlt: "a-z",
@@ -279,13 +304,14 @@ const projectsData = [
     ],
   },
   {
-    id: 6,
+    id: 11,
     title: "Constructivisim Tools",
     subTitle: "Poster",
     description:
-      "Constructivism Tools   |   Tools design inspired by Constructivism. Vector.",
+      "Constructivism Tools   |   This poster features tools inspired by the Constructivism art movement.",
+    courseDetails: "[ Poster  |  2023 ]",
     imageUrl: "/assets/projects/constructivisim.png",
-    imageUrlMobile:  "/assets/projects/constructivisimMobile.png",
+    imageUrlMobile: "/assets/projects/constructivisimMobile.png",
     imageAlt: "constructivisim",
     layout: "StackedImageLayout",
     images: [
@@ -300,13 +326,17 @@ const projectsData = [
     ],
   },
   {
-    id: 8,
+    id: 12,
     title: "Mix of Illustrations",
     imageUrl: "/assets/projects/frogiKusama.png",
-    imageUrlMobile:  "/assets/projects/frogiKusamaMobile.png",
+    imageUrlMobile: "/assets/projects/frogiKusamaMobile.png",
     imageAlt: "frogiKusama",
     layout: "TwoSideGallery",
     images: [{ url: "/assets/projects/frogiKusama.png", alt: "frogiKusama" }],
   },
 ];
-export { navBarOptions, projectsData };
+
+const getNumOfProjects = () => {
+  return projectsData.length;
+};
+export { navBarOptions, projectsData, getNumOfProjects };
