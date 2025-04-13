@@ -5,6 +5,25 @@ const navBarOptions = {
 const projectsData = [
   {
     id: 1,
+    title: "CHAPPED",
+    description: `CHAPPED   |   CHAPPED was born from the radiant reflection of sunlight — a natural phenomenon that represents the connection between energy, movement, and inner vitality. The sun, as the ultimate source of life and light, revives us, fuels us, and pushes us forward.At the heart of the brand lies the concept of reflection as a leading design value. 
+      Reflection of light, of values, and of self. It represents the dual nature of our relationship with the sun - we are drawn to it, we crave its warmth and energy, yet we must also protect ourselves from its intensity. The design reflects this duality — showing both our love for the sun and our need to approach it with care and balance.
+      The products, Lip Balm and Face Stick — are designed to harness this powerful energy, not only as a force of nature, but as a daily experience. They provide protection, allowing us to move closer to the light, to feel safe within it, and to absorb its energy throughout the day.`,
+    courseDetails: "[ Brand Identity  |  2025 ]",
+    imageUrl: "/assets/projects/chappedCover.png",
+    imageUrlMobile: "/assets/projects/chappedMobile.png",
+    imageAlt: "chapped",
+    layout: "StackedImageLayout",
+    images: [
+    { url: "/assets/projects/Chapped/chapped1.png", alt: "chapped1" },
+    { url: "/assets/projects/Chapped/chapped2.png", alt: "chapped1" },
+    { url: "/assets/projects/Chapped/chapped3.png", alt: "chapped1" },
+    { url: "/assets/projects/Chapped/chapped5.png", alt: "chapped1" },
+    { url: "/assets/projects/Chapped/chapped6.png", alt: "chapped1" },
+    { url: "/assets/projects/Chapped/chapped7.png", alt: "chapped1" },],
+  },
+  {
+    id: 2,
     title: "KAZI",
     subTitle: "Packaging",
     description:
@@ -18,27 +37,6 @@ const projectsData = [
       { url: "/assets/projects/kazi/kazi1.png", alt: "kazi1" },
       { url: "/assets/projects/kazi/kazi2.png", alt: "kazi2" },
       { url: "/assets/projects/kazi/kazi3.png", alt: "kazi3" },
-    ],
-  },
-  {
-    id: 2,
-    title: "The ARCHIVE",
-    subTitle: "Logo",
-    description:
-      "The Archive   |   The logo is for a boutique store, specializing in rare and vintage magazines, is a blend of old-school charm and modern design, crafted to appeal to magazine collectors and vintage enthusiasts alike. It captures the store’s unique character as a fusion of past and present, inspired by values of density, authenticity, nostalgia, and eclecticism. The design reflects a deep appreciation for print culture’s rich history.",
-    courseDetails: "[ Logo Design  |  2024 ]",
-    imageUrl: "/assets/projects/ArchiveCover.png",
-    imageUrlMobile: "/assets/projects/ArchiveCoverMobile.png",
-    imageAlt: "archive",
-    layout: "StackedImageLayout",
-    images: [
-      {
-        url: "/assets/projects/archive/archive3.png",
-        alt: "archive-white-logo",
-      },
-      { url: "/assets/projects/archive/archive1.png", alt: "archive-sign" },
-      { url: "/assets/projects/archive/archive2.png", alt: "archive-red-logo" },
-      { url: "/assets/projects/archive/archive4Grid.png", alt: "archive-grid" },
     ],
   },
   {
@@ -129,40 +127,42 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Zot Ani",
-    subTitle: "Video",
+    title: "The ARCHIVE",
+    subTitle: "Logo",
     description:
-      "Zot Ani   |   “Zot Ani” means in Hebrew “this is me”. This short video is a personal introduction, capturing who I am through different angles and interests.",
-    courseDetails: "[ Video  |  2024 ]",
-    imageUrl: "/assets/projects/zotAni.png",
-    imageUrlMobile: "/assets/projects/zotAniMobile.png",
-    imageAlt: "",
+      "The Archive   |   The logo is for a boutique store, specializing in rare and vintage magazines, is a blend of old-school charm and modern design, crafted to appeal to magazine collectors and vintage enthusiasts alike. It captures the store’s unique character as a fusion of past and present, inspired by values of density, authenticity, nostalgia, and eclecticism. The design reflects a deep appreciation for print culture’s rich history.",
+    courseDetails: "[ Logo Design  |  2024 ]",
+    imageUrl: "/assets/projects/ArchiveCover.png",
+    imageUrlMobile: "/assets/projects/ArchiveCoverMobile.png",
+    imageAlt: "archive",
     layout: "StackedImageLayout",
-    coverMedia: {
-      url: "/assets/projects/zotani/zot-ani.mp4",
-      alt: "zot-ani-vid",
-      orientation: "horizontal",
-    },
     images: [
-      { url: "/assets/projects/zotani/zotAniGrid.png", alt: "zot-ani-grid" },
+      {
+        url: "/assets/projects/archive/archive3.png",
+        alt: "archive-white-logo",
+      },
+      { url: "/assets/projects/archive/archive1.png", alt: "archive-sign" },
+      { url: "/assets/projects/archive/archive2.png", alt: "archive-red-logo" },
+      { url: "/assets/projects/archive/archive4Grid.png", alt: "archive-grid" },
     ],
   },
   {
     id: 5,
-    title: "Ambiguous Loss",
-    subTitle: "Posters",
+    title: "Cé Bon",
+    subTitle: "Packaging",
     description:
-      "Ambiguous Loss   |   series of posters that explore the concept of Ambiguous Loss, which describes the emotional experience of losing someone who is apparently still alive, but emotionally or physically absent. To convey this complex feeling, I chose the color yellow, symbolizing hope and resilience, especially in the context of Israel's ongoing struggle to bring hostages back home from captivity in Gaza. The posters aim to evoke a sense of longing and awareness, capturing the pain of uncertainty while also highlighting the collective effort to reconnect with those who are missing in both body and spirit.",
-    courseDetails: "[ Posters  |  2024 ]",
-    imageUrl: "/assets/projects/AmbiguousLossCover.png",
-    imageUrlMobile: "/assets/projects/AmbiguousLossCoverMobile.png",
-    imageAlt: "AmbiguousLoss",
+      "Cé Bon   |   The 'Ce Bon' soap packaging is inspired by the elegant style of Art Deco posters, bringing a French feel to each design. The name  'Ce Bon', meaning 'something good' in French, and the clean lines, and vintage colors give the soap a classic, stylish look. The result is a timeless package that adds a touch of French charm to everyday soap - something you’d want to keep even after use.",
+    courseDetails: "[ Packaging  |  2024 ]",
+    imageUrl: "/assets/projects/cebon/mockup-mix-cover.png",
+    imageUrlMobile: "/assets/projects/cebonMobile.png",
+    imageAlt: "soap",
     layout: "StackedImageLayout",
     images: [
-      { url: "/assets/projects/ambiguousLoss/ambiLoss1.png", alt: "ambiLoss1" },
-      { url: "/assets/projects/ambiguousLoss/ambiLoss2.png", alt: "ambiLoss2" },
-      { url: "/assets/projects/ambiguousLoss/ambiLoss3.png", alt: "ambiLoss3" },
-      { url: "/assets/projects/ambiguousLoss/ambiLoss4.png", alt: "ambiLoss4" },
+      { url: "/assets/projects/cebon/mockup-pear.png", alt: "pear-soap" },
+      { url: "/assets/projects/cebon/mockup-lemon.png", alt: "lemon-soap" },
+      { url: "/assets/projects/cebon/mockup-fig.png", alt: "fig-soap" },
+      { url: "/assets/projects/cebon/mockup-mix.png", alt: "mix-soap" },
+      { url: "/assets/projects/cebon/swimmers.png", alt: "swimmers" },
     ],
   },
   {
@@ -225,25 +225,44 @@ const projectsData = [
   },
   {
     id: 7,
-    title: "Cé Bon",
-    subTitle: "Packaging",
+    title: "Zot Ani",
+    subTitle: "Video",
     description:
-      "Cé Bon   |   The 'Ce Bon' soap packaging is inspired by the elegant style of Art Deco posters, bringing a French feel to each design. The name  'Ce Bon', meaning 'something good' in French, and the clean lines, and vintage colors give the soap a classic, stylish look. The result is a timeless package that adds a touch of French charm to everyday soap - something you’d want to keep even after use.",
-    courseDetails: "[ Packaging  |  2024 ]",
-    imageUrl: "/assets/projects/cebon/mockup-mix-cover.png",
-    imageUrlMobile: "/assets/projects/cebonMobile.png",
-    imageAlt: "soap",
+      "Zot Ani   |   “Zot Ani” means in Hebrew “this is me”. This short video is a personal introduction, capturing who I am through different angles and interests.",
+    courseDetails: "[ Video  |  2024 ]",
+    imageUrl: "/assets/projects/zotAni.png",
+    imageUrlMobile: "/assets/projects/zotAniMobile.png",
+    imageAlt: "",
     layout: "StackedImageLayout",
+    coverMedia: {
+      url: "/assets/projects/zotani/zot-ani.mp4",
+      alt: "zot-ani-vid",
+      orientation: "horizontal",
+    },
     images: [
-      { url: "/assets/projects/cebon/mockup-pear.png", alt: "pear-soap" },
-      { url: "/assets/projects/cebon/mockup-lemon.png", alt: "lemon-soap" },
-      { url: "/assets/projects/cebon/mockup-fig.png", alt: "fig-soap" },
-      { url: "/assets/projects/cebon/mockup-mix.png", alt: "mix-soap" },
-      { url: "/assets/projects/cebon/swimmers.png", alt: "swimmers" },
+      { url: "/assets/projects/zotani/zotAniGrid.png", alt: "zot-ani-grid" },
     ],
   },
   {
     id: 8,
+    title: "Ambiguous Loss",
+    subTitle: "Posters",
+    description:
+      "Ambiguous Loss   |   series of posters that explore the concept of Ambiguous Loss, which describes the emotional experience of losing someone who is apparently still alive, but emotionally or physically absent. To convey this complex feeling, I chose the color yellow, symbolizing hope and resilience, especially in the context of Israel's ongoing struggle to bring hostages back home from captivity in Gaza. The posters aim to evoke a sense of longing and awareness, capturing the pain of uncertainty while also highlighting the collective effort to reconnect with those who are missing in both body and spirit.",
+    courseDetails: "[ Posters  |  2024 ]",
+    imageUrl: "/assets/projects/AmbiguousLossCover.png",
+    imageUrlMobile: "/assets/projects/AmbiguousLossCoverMobile.png",
+    imageAlt: "AmbiguousLoss",
+    layout: "StackedImageLayout",
+    images: [
+      { url: "/assets/projects/ambiguousLoss/ambiLoss1.png", alt: "ambiLoss1" },
+      { url: "/assets/projects/ambiguousLoss/ambiLoss2.png", alt: "ambiLoss2" },
+      { url: "/assets/projects/ambiguousLoss/ambiLoss3.png", alt: "ambiLoss3" },
+      { url: "/assets/projects/ambiguousLoss/ambiLoss4.png", alt: "ambiLoss4" },
+    ],
+  },
+  {
+    id: 9,
     title: "Zohar Argov",
     subTitle: "Album Cover",
     description:
@@ -270,7 +289,7 @@ const projectsData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "Sky Bubbles",
     subTitle: "UX/UI",
     description:
@@ -286,21 +305,6 @@ const projectsData = [
         alt: "skybuuble-demo",
         orientation: "horizontal",
       },
-    ],
-  },
-  {
-    id: 10,
-    title: "A - Z",
-    subTitle: "Animation",
-    description:
-      "A-Z   |   A short video that illustrates the transformation of the letter A as it morphs into the letter Z through shifting a series of dynamic shapes.",
-    courseDetails: "[ Classic Animation  |  2024 ]",
-    imageUrl: "/assets/projects/a-z.png",
-    imageUrlMobile: "/assets/projects/a-zMobile.png",
-    imageAlt: "a-z",
-    layout: "StackedImageLayout",
-    images: [
-      { url: "/assets/projects/a-z.mp4", alt: "a-z", orientation: "vertical" },
     ],
   },
   {
@@ -327,6 +331,22 @@ const projectsData = [
   },
   {
     id: 12,
+    title: "A - Z",
+    subTitle: "Animation",
+    description:
+      "A-Z   |   A short video that illustrates the transformation of the letter A as it morphs into the letter Z through shifting a series of dynamic shapes.",
+    courseDetails: "[ Classic Animation  |  2024 ]",
+    imageUrl: "/assets/projects/a-z.png",
+    imageUrlMobile: "/assets/projects/a-zMobile.png",
+    imageAlt: "a-z",
+    layout: "StackedImageLayout",
+    images: [
+      { url: "/assets/projects/a-z.mp4", alt: "a-z", orientation: "vertical" },
+    ],
+  },
+
+  {
+    id: 13,
     title: "Mix of Illustrations",
     imageUrl: "/assets/projects/frogiKusama.png",
     imageUrlMobile: "/assets/projects/frogiKusamaMobile.png",
@@ -334,24 +354,7 @@ const projectsData = [
     layout: "TwoSideGallery",
     images: [{ url: "/assets/projects/frogiKusama.png", alt: "frogiKusama" }],
   },
-  {
-    id: 13,
-    title: "CHAPPED",
-    description: `CHAPPED   |   CHAPPED was born from the radiant reflection of sunlight — a natural phenomenon that represents the connection between energy, movement, and inner vitality. The sun, as the ultimate source of life and light, revives us, fuels us, and pushes us forward.At the heart of the brand lies the concept of reflection as a leading design value. 
-      Reflection of light, of values, and of self. It represents the dual nature of our relationship with the sun - we are drawn to it, we crave its warmth and energy, yet we must also protect ourselves from its intensity. The design reflects this duality — showing both our love for the sun and our need to approach it with care and balance.
-      The products, Lip Balm and Face Stick — are designed to harness this powerful energy, not only as a force of nature, but as a daily experience. They provide protection, allowing us to move closer to the light, to feel safe within it, and to absorb its energy throughout the day.`,
-    courseDetails: "[ Brand Identity  |  2025 ]",
-    imageUrl: "/assets/projects/frogiKusama.png",
-    imageUrlMobile: "/assets/projects/frogiKusamaMobile.png",
-    imageAlt: "chapped",
-    layout: "StackedImageLayout",
-    images: [
-    { url: "/assets/projects/Chapped/chapped1.png", alt: "chapped1" },
-    { url: "/assets/projects/Chapped/chapped2.png", alt: "chapped1" },
-    { url: "/assets/projects/Chapped/chapped3.png", alt: "chapped1" },
-    { url: "/assets/projects/Chapped/chapped5.png", alt: "chapped1" },
-    { url: "/assets/projects/Chapped/chapped6.png", alt: "chapped1" },],
-  },
+
 ];
 
 const getNumOfProjects = () => {
