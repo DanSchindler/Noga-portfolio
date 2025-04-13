@@ -6,6 +6,7 @@ const projectsData = [
   {
     id: 1,
     title: "CHAPPED",
+    subTitle: "Brand Identity",
     description: `CHAPPED   |   CHAPPED was born from the radiant reflection of sunlight — a natural phenomenon that represents the connection between energy, movement, and inner vitality. The sun, as the ultimate source of life and light, revives us, fuels us, and pushes us forward.At the heart of the brand lies the concept of reflection as a leading design value. 
       Reflection of light, of values, and of self. It represents the dual nature of our relationship with the sun - we are drawn to it, we crave its warmth and energy, yet we must also protect ourselves from its intensity. The design reflects this duality — showing both our love for the sun and our need to approach it with care and balance.
       The products, Lip Balm and Face Stick — are designed to harness this powerful energy, not only as a force of nature, but as a daily experience. They provide protection, allowing us to move closer to the light, to feel safe within it, and to absorb its energy throughout the day.`,
