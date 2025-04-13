@@ -10,14 +10,15 @@ const projectsData = [
       Reflection of light, of values, and of self. It represents the dual nature of our relationship with the sun - we are drawn to it, we crave its warmth and energy, yet we must also protect ourselves from its intensity. The design reflects this duality — showing both our love for the sun and our need to approach it with care and balance.
       The products, Lip Balm and Face Stick — are designed to harness this powerful energy, not only as a force of nature, but as a daily experience. They provide protection, allowing us to move closer to the light, to feel safe within it, and to absorb its energy throughout the day.`,
     courseDetails: "[ Brand Identity  |  2025 ]",
-    imageUrl: "/assets/projects/chappedCover.png",
-    imageUrlMobile: "/assets/projects/chappedMobile.png",
+    imageUrl: "/assets/projects/Chapped/chappedCover.png",
+    imageUrlMobile: "/assets/projects/Chapped/chappedMobile.png",
     imageAlt: "chapped",
     layout: "StackedImageLayout",
     images: [
     { url: "/assets/projects/Chapped/chapped1.png", alt: "chapped1" },
     { url: "/assets/projects/Chapped/chapped2.png", alt: "chapped1" },
     { url: "/assets/projects/Chapped/chapped3.png", alt: "chapped1" },
+    // { url: "/assets/projects/Chapped/chapped4.png", alt: "chapped1" },
     { url: "/assets/projects/Chapped/chapped5.png", alt: "chapped1" },
     { url: "/assets/projects/Chapped/chapped6.png", alt: "chapped1" },
     { url: "/assets/projects/Chapped/chapped7.png", alt: "chapped1" },],
