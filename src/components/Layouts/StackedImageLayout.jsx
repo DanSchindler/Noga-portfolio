@@ -8,13 +8,14 @@ const StackedImageLayout = ({ project, gap = 20, postHeaderGap = 80 }) => {
   const images = project.images;
   const headerIndex =
     project.headerIndex !== undefined ? project.headerIndex : -1;
-
+  const projectStyle = project.style || {}
+  
   return (
     <Box
       sx={{
         width: "100%",
         margin: "auto",
-        gap: "10px",
+        gap: projectStyle.gap || '10px',
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

@@ -25,14 +25,20 @@ const MediaRenderer = ({ media }) => {
       controls
       autoPlay
       src={media.url}
-      sx={getStyle()}
+      sx={{
+        ...getStyle(),
+        ...(media.style || {})
+      }}
     />
   ) : (
     <Box
       component="img"
       src={media.url}
       alt={media.alt}
-      sx={getStyle()}
+      sx={{
+        ...getStyle(),
+        ...(media.style || {})
+      }}
     />
   );
 };
